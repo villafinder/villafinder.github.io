@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "caviar_dreamsregular";
+  src: url("../fonts/CaviarDreams-webfont.eot");
+  src: url("../fonts/CaviarDreams-webfont.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/CaviarDreams-webfont.woff") format("woff");
+  src: url("../fonts/CaviarDreams-webfont.ttf") format("truetype");
+  src: url("../fonts/CaviarDreams-webfont.svg#caviar_dreamsregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   position: relative;
   -moz-box-sizing: border-box;
@@ -41,7 +51,7 @@ body {
   font-size: 29px;
   cursor: pointer;
   -webkit-backface-visibility: hidden;
-  font-family: "Caviar Dreams";
+  font-family: "caviar_dreamsregular";
   outline: none !important;
 }
 
@@ -123,8 +133,8 @@ body {
   height: 18.5em;
   border-radius: 50%;
   background: white;
-  background: -webkit-radial-gradient(transparent 34.5%, white 35%, white 62.5%, transparent 63%);
-  background: radial-gradient(transparent 34.5%, white 35%, white 62.5%, transparent 63%);
+  background: -webkit-radial-gradient(transparent 34%, white 35%, white 62%, transparent 63%);
+  background: radial-gradient(transparent 34%, white 35%, white 62%, transparent 63%);
   padding-top: 45px;
   color: white;
   text-align: center;
@@ -181,7 +191,7 @@ body {
   display: block;
   font-size: 0.5em;
   font-weight: 700;
-  font-family: "Caviar Dreams";
+  font-family: "caviar_dreamsregular";
 }
 
 .csstransforms .wrapper li a:hover,
@@ -283,7 +293,7 @@ body {
   left: 50%;
   margin-left: -208px;
   font-size: 70px;
-  font-family: "Caviar Dreams";
+  font-family: "caviar_dreamsregular";
   z-index: 10;
   padding: 15px;
   text-align: center;
