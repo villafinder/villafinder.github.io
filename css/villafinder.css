@@ -22,10 +22,6 @@ body {
   overflow: hidden;
 }
 
-.logo {
-  width: 150px;
-}
-
 .button {
   position: absolute;
   top: 50%;
@@ -129,7 +125,7 @@ body {
   background: white;
   background: -webkit-radial-gradient(transparent 34.5%, white 35%, white 62.5%, transparent 63%);
   background: radial-gradient(transparent 34.5%, white 35%, white 62.5%, transparent 63%);
-  padding-top: 50px;
+  padding-top: 45px;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -191,9 +187,9 @@ body {
 .csstransforms .wrapper li a:hover,
 .csstransforms .wrapper li a:active,
 .csstransforms .wrapper li a:focus {
-  background: -webkit-radial-gradient(transparent 44.5%, #ff5a5f 45%);
-  background: radial-gradient(transparent 44.5%, #ff5a5f 45%);
-  padding-top: 20px;
+  background: -webkit-radial-gradient(transparent 44.5%, #ff696e 45%);
+  background: radial-gradient(transparent 44.5%, #ff696e 45%);
+  padding-top: 15px;
 }
 
 .csstransforms .opened-nav li {
@@ -300,4 +296,13 @@ body {
   position: absolute;
   top: -200px;
   opacity: 0.5;
+}
+
+/*logo */
+.logo {
+  width: 182px;
+}
+
+.csstransforms .wrapper li a:hover .logo, .csstransforms .wrapper li a:active .logo, .csstransforms .wrapper li a:focus .logo {
+  width: 212px;
 }

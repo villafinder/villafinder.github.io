@@ -6,7 +6,7 @@ $btn_bg_color: #ff5a5f
 $btn_txt_color: #fff
 $link_bg_color: #fff
 $link_txt_color: #fff
-$link_bg_color_hover: #ff5a5f
+$link_bg_color_hover: #ff696e
 $font-family: 'Caviar Dreams'
 
 //**Calculated Parameters**//
@@ -38,9 +38,6 @@ body
   background-size: cover
   color: $txt_color
   overflow: hidden
-
-.logo
-  width: 150px
 
 .button
   position: absolute
@@ -146,7 +143,7 @@ body
   background: -webkit-radial-gradient(transparent 34.5%, $link_bg_color 35%, $link_bg_color 62.5%, transparent 63%)
   background: -moz-radial-gradient(transparent 34.5%, $link_bg_color 35%, $link_bg_color 62.5%, transparent 63%)
   background: radial-gradient(transparent 34.5%, $link_bg_color 35%, $link_bg_color 62.5%, transparent 63%)
-  padding-top: 50px
+  padding-top: 45px
   color: $link_txt_color
   text-align: center
   text-decoration: none
@@ -187,7 +184,7 @@ body
   background: -webkit-radial-gradient(transparent 44.5%, $link_bg_color_hover 45%)
   background: -moz-radial-gradient(transparent 44.5%, $link_bg_color_hover 45%)
   background: radial-gradient(transparent 44.5%, $link_bg_color_hover 45%)
-  padding-top: 20px
+  padding-top: 15px
 
 .csstransforms .opened-nav li
   -webkit-transition: all .3s ease .3s
@@ -290,4 +287,12 @@ body
   opacity: 0.5
 
 
+/*logo*/
 
+
+.logo
+  width: 182px
+
+.csstransforms .wrapper li a:hover, .csstransforms .wrapper li a:active, .csstransforms .wrapper li a:focus
+  .logo
+    width: 212px
