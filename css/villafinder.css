@@ -32,27 +32,31 @@ body {
   overflow: hidden;
 }
 
-.button {
+.button1 {
   position: absolute;
   top: 50%;
   left: 50%;
   z-index: 11;
   margin-top: -75px;
   margin-left: -75px;
-  padding-bottom: 0;
+  padding: 10px;
   width: 150px;
   height: 150px;
   border: none;
   border-radius: 50%;
   background: none;
-  background-color: #ff5a5f;
-  color: white;
+  background-color: white;
+  color: black;
   text-align: center;
-  font-size: 29px;
+  font-size: 16px;
   cursor: pointer;
   -webkit-backface-visibility: hidden;
   font-family: "caviar_dreamsregular";
   outline: none !important;
+  border: solid 1px #d6184d;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 -4px 0 rgba(214, 24, 77, 0.3), 0 4px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -4px 0 rgba(214, 24, 77, 0.3), 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .overlay {
@@ -74,7 +78,7 @@ body {
   opacity: 0;
 }
 
-.csstransforms .wrapper {
+.csstransforms .wrapper1 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -92,18 +96,23 @@ body {
   overflow: hidden;
 }
 
+.transition {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 .csstransforms .opened-nav {
   border-radius: 50%;
   opacity: 1;
-  -webkit-transition: all 0.6s ease-in-out;
-  transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
   pointer-events: auto;
 }
 
-.csstransforms .wrapper li {
+.csstransforms .wrapper1 li {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -115,16 +124,16 @@ body {
   font-size: 1.5em;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  -webkit-transform: rotate(-60deg) skew(-30deg);
-  -ms-transform: rotate(-60deg) skew(-30deg);
-  transform: rotate(-60deg) skew(-30deg);
+  -webkit-transform: rotate(-45deg) skew(0deg);
+  -ms-transform: rotate(-45deg) skew(0deg);
+  transform: rotate(-45deg) skew(0deg);
   -webkit-transform-origin: 100% 100%;
   -ms-transform-origin: 100% 100%;
   transform-origin: 100% 100%;
   pointer-events: none;
 }
 
-.csstransforms .wrapper li a {
+.csstransforms .wrapper1 li a {
   position: absolute;
   right: -9.25em;
   bottom: -9.25em;
@@ -141,51 +150,39 @@ body {
   text-decoration: none;
   font-size: 1.2em;
   line-height: 2;
-  -webkit-transform: skew(-30deg) rotate(-60deg) scale(1);
-  -ms-transform: skew(-30deg) rotate(-60deg) scale(1);
-  transform: skew(-30deg) rotate(-60deg) scale(1);
+  -webkit-transform: skew(0deg) rotate(-45deg) scale(1);
+  -ms-transform: skew(0deg) rotate(-45deg) scale(1);
+  transform: skew(0deg) rotate(-45deg) scale(1);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   pointer-events: auto;
 }
 
-.csstransforms .wrapper li:first-child {
-  -webkit-transform: rotate(30deg) skew(30deg);
-  -ms-transform: rotate(30deg) skew(30deg);
-  transform: rotate(30deg) skew(30deg);
+.csstransforms .wrapper1 li:first-child {
+  -webkit-transform: rotate(45deg) skew(0deg);
+  -ms-transform: rotate(45deg) skew(0deg);
+  transform: rotate(45deg) skew(0deg);
 }
 
-.csstransforms .wrapper li:nth-child(2) {
-  -webkit-transform: rotate(90deg) skew(30deg);
-  -ms-transform: rotate(90deg) skew(30deg);
-  transform: rotate(90deg) skew(30deg);
+.csstransforms .wrapper1 li:nth-child(2) {
+  -webkit-transform: rotate(135deg) skew(0deg);
+  -ms-transform: rotate(135deg) skew(0deg);
+  transform: rotate(135deg) skew(0deg);
 }
 
-.csstransforms .wrapper li:nth-child(3) {
-  -webkit-transform: rotate(150deg) skew(30deg);
-  -ms-transform: rotate(150deg) skew(30deg);
-  transform: rotate(150deg) skew(30deg);
+.csstransforms .wrapper1 li:nth-child(3) {
+  -webkit-transform: rotate(225deg) skew(0deg);
+  -ms-transform: rotate(225deg) skew(0deg);
+  transform: rotate(225deg) skew(0deg);
 }
 
-.csstransforms .wrapper li:nth-child(4) {
-  -webkit-transform: rotate(210deg) skew(30deg);
-  -ms-transform: rotate(210deg) skew(30deg);
-  transform: rotate(210deg) skew(30deg);
+.csstransforms .wrapper1 li:nth-child(4) {
+  -webkit-transform: rotate(315deg) skew(0deg);
+  -ms-transform: rotate(315deg) skew(0deg);
+  transform: rotate(315deg) skew(0deg);
 }
 
-.csstransforms .wrapper li:nth-child(5) {
-  -webkit-transform: rotate(270deg) skew(30deg);
-  -ms-transform: rotate(270deg) skew(30deg);
-  transform: rotate(270deg) skew(30deg);
-}
-
-.csstransforms .wrapper li:nth-child(6) {
-  -webkit-transform: rotate(330deg) skew(30deg);
-  -ms-transform: rotate(330deg) skew(30deg);
-  transform: rotate(330deg) skew(30deg);
-}
-
-.csstransforms .wrapper li a span {
+.csstransforms .wrapper1 li a span {
   position: relative;
   top: 1.8em;
   display: block;
@@ -194,9 +191,9 @@ body {
   font-family: "caviar_dreamsregular";
 }
 
-.csstransforms .wrapper li a:hover,
-.csstransforms .wrapper li a:active,
-.csstransforms .wrapper li a:focus {
+.csstransforms .wrapper1 li a:hover,
+.csstransforms .wrapper1 li a:active,
+.csstransforms .wrapper1 li a:focus {
   background: -webkit-radial-gradient(transparent 44.5%, #ff696e 45%);
   background: radial-gradient(transparent 44.5%, #ff696e 45%);
   padding-top: 15px;
@@ -208,18 +205,18 @@ body {
 }
 
 /*IE... */
-.no-csstransforms .wrapper {
+.no-csstransforms .wrapper1 {
   overflow: hidden;
   margin: 10em auto;
   padding: 0.5em;
   text-align: center;
 }
 
-.no-csstransforms .wrapper ul {
+.no-csstransforms .wrapper1 ul {
   display: inline-block;
 }
 
-.no-csstransforms .wrapper li {
+.no-csstransforms .wrapper1 li {
   float: left;
   width: 5em;
   height: 5em;
@@ -229,7 +226,7 @@ body {
   line-height: 5em;
 }
 
-.no-csstransforms .wrapper li a {
+.no-csstransforms .wrapper1 li a {
   display: block;
   width: 100%;
   height: 100%;
@@ -237,16 +234,16 @@ body {
   text-decoration: none;
 }
 
-.no-csstransforms .wrapper li a:hover, .no-csstransforms .wrapper li a:active, .no-csstransforms .wrapper li a:focus {
+.no-csstransforms .wrapper1 li a:hover, .no-csstransforms .wrapper1 li a:active, .no-csstransforms .wrapper1 li a:focus {
   background-color: #f8f8f8;
 }
 
-.no-csstransforms .wrapper li.active a {
+.no-csstransforms .wrapper1 li.active a {
   background-color: #6f325c;
   color: white;
 }
 
-.no-csstransforms .button {
+.no-csstransforms .button1 {
   display: none;
 }
 
@@ -259,11 +256,11 @@ body {
   }
 }
 @media only screen and (max-width: 500px) {
-  .no-ccstransforms .wrapper {
+  .no-ccstransforms .wrapper1 {
     padding: 0.5em;
   }
 
-  .no-csstransforms .wrapper li {
+  .no-csstransforms .wrapper1 li {
     width: 4em;
     height: 4em;
     font-size: 0.9em;
@@ -271,7 +268,7 @@ body {
   }
 }
 @media only screen and (max-width: 480px) {
-  .csstransforms .wrapper {
+  .csstransforms .wrapper1 {
     font-size: 0.68em;
   }
 
@@ -280,7 +277,7 @@ body {
   }
 }
 @media only screen and (max-width: 420px) {
-  .no-csstransforms .wrapper li {
+  .no-csstransforms .wrapper1 li {
     width: 100%;
     height: 3em;
     line-height: 3em;
@@ -290,29 +287,216 @@ body {
 .txt {
   position: absolute;
   top: 35px;
-  left: 50%;
-  margin-left: -208px;
-  font-size: 70px;
+  font-size: 65px;
+  font-family: "caviar_dreamsregular";
+  z-index: 11;
+  padding: 15px 15px 5px;
+  text-align: center;
+  text-shadow: 0 0 10px #cccccc, 0 0 20px #cccccc, 0 0 30px #cccccc, 0 0 40px #cccccc, 0 0 50px #cccccc;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  background-color: white;
+  width: 100%;
+}
+
+.com {
+  font-size: 40px;
+}
+
+.dot {
+  font-size: 90px;
+  line-height: 65px;
+  color: #ff3670;
+  margin-right: 7px;
+}
+
+.sub_txt {
+  position: absolute;
+  top: 120px;
+  font-size: 40px;
   font-family: "caviar_dreamsregular";
   z-index: 10;
   padding: 15px;
   text-align: center;
-  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px white;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  text-shadow: 0 0 20px #cccccc, 0 0 30px #cccccc, 0 0 40px #cccccc;
+  background-color: white;
+  width: 100%;
+  -webkit-transition: all 1.2s;
+  transition: all 1.2s;
 }
 
 .activated {
   position: absolute;
-  top: -200px;
-  opacity: 0.5;
+  top: -350px;
+  opacity: 0.2;
+}
+
+.wwd {
+  font-family: "caviar_dreamsregular";
+  font-size: 16px;
+  border-radius: 50%;
+  z-index: 5;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 50%;
+  margin-top: -75px;
+  margin-left: -75px;
+  text-align: center;
+  height: 150px;
+  width: 150px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: solid 1px #d6184d;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 -4px 0 rgba(214, 24, 77, 0.3), 0 4px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -4px 0 rgba(214, 24, 77, 0.3), 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.all {
+  width: 100%;
+  height: 100%;
+}
+
+.wwd.pt2 {
+  left: 65%;
+  padding: 29px 10px;
+  z-index: 7;
+}
+.wwd.pt2 a {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+.wwd.pt3 {
+  left: 35%;
+  padding: 29px 10px;
+  z-index: 6;
+}
+.wwd.pt3 a {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+.initial {
+  left: 50% !important;
+}
+
+.final {
+  left: -20% !important;
+}
+
+.final2 {
+  left: 120% !important;
+}
+
+.ov {
+  font-family: "caviar_dreamsregular";
+  font-size: 14px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  text-align: center;
+  height: 120px;
+  width: 120px;
+  padding: 75px 0 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.ov:hover {
+  background-color: #e4e4e4;
+  top: 40px;
+  padding-top: 45px;
+}
+
+.ov1 {
+  margin-left: -320px;
+}
+
+.ov2 {
+  margin-left: -190px;
+}
+
+.ov3 {
+  margin-left: -60px;
+}
+
+.ov4 {
+  margin-left: 70px;
+}
+
+.ov5 {
+  margin-left: 200px;
+}
+
+.ov_box {
+  position: absolute;
+  top: 124px;
+  left: 50%;
+  margin-left: -330px;
+  height: 140px;
+  width: 660px;
+  background-color: white;
+  overflow: hidden;
+  border: 1px solid #d6184d;
+  z-index: 5;
+  -webkit-transition: all 1.3s;
+  transition: all 1.3s;
+  opacity: 1;
+}
+
+.ov_initial {
+  top: -300px;
+  width: 0;
+  margin-left: 0px;
+  opacity: 0;
+}
+
+.ov_title {
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+  color: #d6184d;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "caviar_dreamsregular";
+}
+
+/*Location */
+.loc_txt {
+  text-align: right;
+  font-size: 16px;
+  font-family: "caviar_dreamsregular";
+  color: black;
+}
+
+.loc_box {
+  position: absolute;
+  bottom: -43px;
+  right: 10%;
+  height: 100px;
+  background-color: whitesmoke;
+  border: 1px solid #d6184d;
+  z-index: 5;
+  padding: 12px;
+}
+
+.under {
+  bottom: -200px;
 }
 
 /*logo */
 .logo {
-  width: 182px;
+  width: 202px;
 }
 
-.csstransforms .wrapper li a:hover .logo, .csstransforms .wrapper li a:active .logo, .csstransforms .wrapper li a:focus .logo {
-  width: 212px;
+.csstransforms .wrapper1 li a:hover .logo, .csstransforms .wrapper1 li a:active .logo, .csstransforms .wrapper1 li a:focus .logo {
+  width: 262px;
 }

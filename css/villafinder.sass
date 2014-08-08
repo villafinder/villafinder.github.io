@@ -1,9 +1,17 @@
 //**Entry Parameters**//
-$number_links: 6
+$number_links1: 4
+$number_links2: 1
+$number_links3: 1
+
 $bg_color: #f2f2f2
 $txt_color: #000
-$btn_bg_color: #ff5a5f
-$btn_txt_color: #fff
+
+$btn_bg_color: #fff
+$btn_txt_color: #000
+$btn_border_color: #d6184d
+$btn_shadow_color: rgba(214, 24, 77, 0.30)
+
+
 $link_bg_color: #fff
 $link_txt_color: #fff
 $link_bg_color_hover: #ff696e
@@ -22,10 +30,20 @@ $link_bg_color_hover: #ff696e
 $font-family: 'caviar_dreamsregular'
 
 //**Calculated Parameters**//
-$central_angle: (360deg)/$number_links
-$skew_angle: (-90deg)+$central_angle
-$rotate_angle: (-90deg)+($central_angle)/2
-$unskew_angle: (-1)*($skew_angle)
+$central_angle1: (360deg)/$number_links1
+$skew_angle1: (-90deg)+$central_angle1
+$rotate_angle1: (-90deg)+($central_angle1)/2
+$unskew_angle1: (-1)*($skew_angle1)
+
+$central_angle2: (360deg)/$number_links2
+$skew_angle2: (-90deg)+$central_angle2
+$rotate_angle2: (-90deg)+($central_angle2)/2
+$unskew_angle2: (-1)*($skew_angle2)
+
+$central_angle3: (360deg)/$number_links3
+$skew_angle3: (-90deg)+$central_angle3
+$rotate_angle3: (-90deg)+($central_angle3)/2
+$unskew_angle3: (-1)*($skew_angle3)
 
 //**SASS**//
 
@@ -51,14 +69,14 @@ body
   color: $txt_color
   overflow: hidden
 
-.button
+.button1
   position: absolute
   top: 50%
   left: 50%
   z-index: 11
   margin-top: -75px
   margin-left: -75px
-  padding-bottom: 0
+  padding: 10px
   width: 150px
   height: 150px
   border: none
@@ -67,11 +85,16 @@ body
   background-color: $btn_bg_color
   color: $btn_txt_color
   text-align: center
-  font-size: 29px
+  font-size: 16px
   cursor: pointer
   -webkit-backface-visibility: hidden
   font-family: $font-family
   outline: none!important
+  border: solid 1px $btn_border_color
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2)
+  -webkit-box-shadow: inset 0 -4px 0 $btn_shadow_color, 0 4px 4px rgba(0, 0, 0, 0.2)
+  -moz-box-shadow: inset 0 -4px 0 $btn_shadow_color, 0 4px 4px rgba(0, 0, 0, 0.2)
+  box-shadow: inset 0 -4px 0 $btn_shadow_color, 0 4px 4px rgba(0, 0, 0, 0.2)
 
 .overlay
   width: 100%
@@ -91,7 +114,7 @@ body
 .overlay.on-overlay
   opacity: 0
 
-.csstransforms .wrapper
+.csstransforms .wrapper1
   position: absolute
   top: 50%
   left: 50%
@@ -109,19 +132,24 @@ body
   pointer-events: none
   overflow: hidden
 
+.transition
+  -webkit-transition: all .5s ease
+  -moz-transition: all .5s ease
+  transition: all .5s ease
+
 .csstransforms .opened-nav
   border-radius: 50%
   opacity: 1
-  -webkit-transition: all .6s ease-in-out
-  -moz-transition: all .6s ease-in-out
-  transition: all .6s ease-in-out
+  -webkit-transition: all .5s ease-in-out
+  -moz-transition: all .5s ease-in-out
+  transition: all .5s ease-in-out
   -webkit-transform: scale(1)
   -moz-transform: scale(1)
   -ms-transform: scale(1)
   transform: scale(1)
   pointer-events: auto
 
-.csstransforms .wrapper li
+.csstransforms .wrapper1 li
   position: absolute
   top: 50%
   left: 50%
@@ -134,16 +162,16 @@ body
   -webkit-transition: all .3s ease
   -moz-transition: all .3s ease
   transition: all .3s ease
-  -webkit-transform: rotate($rotate_angle) skew($skew_angle)
-  -moz-transform: rotate($rotate_angle) skew($skew_angle)
-  -ms-transform: rotate($rotate_angle) skew($skew_angle)
-  transform: rotate($rotate_angle) skew($skew_angle)
+  -webkit-transform: rotate($rotate_angle1) skew($skew_angle1)
+  -moz-transform: rotate($rotate_angle1) skew($skew_angle1)
+  -ms-transform: rotate($rotate_angle1) skew($skew_angle1)
+  transform: rotate($rotate_angle1) skew($skew_angle1)
   -webkit-transform-origin: 100% 100%
   -moz-transform-origin: 100% 100%
   transform-origin: 100% 100%
   pointer-events: none
 
-.csstransforms .wrapper li a
+.csstransforms .wrapper1 li a
   position: absolute
   right: -9.25em
   bottom: -9.25em
@@ -161,28 +189,28 @@ body
   text-decoration: none
   font-size: 1.2em
   line-height: 2
-  -webkit-transform: skew($skew_angle) rotate($rotate_angle) scale(1)
-  -moz-transform: skew($skew_angle) rotate($rotate_angle) scale(1)
-  -ms-transform: skew($skew_angle) rotate($rotate_angle) scale(1)
-  transform: skew($skew_angle) rotate($rotate_angle) scale(1)
+  -webkit-transform: skew($skew_angle1) rotate($rotate_angle1) scale(1)
+  -moz-transform: skew($skew_angle1) rotate($rotate_angle1) scale(1)
+  -ms-transform: skew($skew_angle1) rotate($rotate_angle1) scale(1)
+  transform: skew($skew_angle1) rotate($rotate_angle1) scale(1)
   -webkit-backface-visibility: hidden
   backface-visibility: hidden
   pointer-events: auto
 
-.csstransforms .wrapper li:first-child
-  -webkit-transform: rotate(0.5*$central_angle + 0*$central_angle) skew($unskew_angle)
-  -ms-transform: rotate(0.5*$central_angle +0*$central_angle) skew($unskew_angle)
-  -moz-transform: rotate(0.5*$central_angle +0*$central_angle) skew($unskew_angle)
-  transform: rotate(0.5*$central_angle +0*$central_angle) skew($unskew_angle)
+.csstransforms .wrapper1 li:first-child
+  -webkit-transform: rotate(0.5*$central_angle1 + 0*$central_angle1) skew($unskew_angle1)
+  -ms-transform: rotate(0.5*$central_angle1 +0*$central_angle1) skew($unskew_angle1)
+  -moz-transform: rotate(0.5*$central_angle1 +0*$central_angle1) skew($unskew_angle1)
+  transform: rotate(0.5*$central_angle1 +0*$central_angle1) skew($unskew_angle1)
 
-@for $i from 2 through $number_links
-  .csstransforms .wrapper li:nth-child(#{$i})
-    -webkit-transform: rotate(0.5*$central_angle + $i*$central_angle - $central_angle) skew($unskew_angle)
-    -ms-transform: rotate(0.5*$central_angle + $i*$central_angle - $central_angle) skew($unskew_angle)
-    -moz-transform: rotate(0.5*$central_angle + $i*$central_angle - $central_angle) skew($unskew_angle)
-    transform: rotate(0.5*$central_angle + $i*$central_angle - $central_angle) skew($unskew_angle)
+@for $i from 2 through $number_links1
+  .csstransforms .wrapper1 li:nth-child(#{$i})
+    -webkit-transform: rotate(0.5*$central_angle1 + $i*$central_angle1 - $central_angle1) skew($unskew_angle1)
+    -ms-transform: rotate(0.5*$central_angle1 + $i*$central_angle1 - $central_angle1) skew($unskew_angle1)
+    -moz-transform: rotate(0.5*$central_angle1 + $i*$central_angle1 - $central_angle1) skew($unskew_angle1)
+    transform: rotate(0.5*$central_angle1 + $i*$central_angle1 - $central_angle1) skew($unskew_angle1)
 
-.csstransforms .wrapper li a span
+.csstransforms .wrapper1 li a span
   position: relative
   top: 1.8em
   display: block
@@ -190,9 +218,9 @@ body
   font-weight: 700
   font-family: $font-family
 
-.csstransforms .wrapper li a:hover,
-.csstransforms .wrapper li a:active,
-.csstransforms .wrapper li a:focus
+.csstransforms .wrapper1 li a:hover,
+.csstransforms .wrapper1 li a:active,
+.csstransforms .wrapper1 li a:focus
   background: -webkit-radial-gradient(transparent 44.5%, $link_bg_color_hover 45%)
   background: -moz-radial-gradient(transparent 44.5%, $link_bg_color_hover 45%)
   background: radial-gradient(transparent 44.5%, $link_bg_color_hover 45%)
@@ -205,16 +233,16 @@ body
 
 /*IE...*/
 
-.no-csstransforms .wrapper
+.no-csstransforms .wrapper1
   overflow: hidden
   margin: 10em auto
   padding: .5em
   text-align: center
 
-.no-csstransforms .wrapper ul
+.no-csstransforms .wrapper1 ul
   display: inline-block
 
-.no-csstransforms .wrapper li
+.no-csstransforms .wrapper1 li
   float: left
   width: 5em
   height: 5em
@@ -223,21 +251,21 @@ body
   font-size: 1em
   line-height: 5em
 
-.no-csstransforms .wrapper li a
+.no-csstransforms .wrapper1 li a
   display: block
   width: 100%
   height: 100%
   color: inherit
   text-decoration: none
 
-.no-csstransforms .wrapper li a:hover, .no-csstransforms .wrapper li a:active, .no-csstransforms .wrapper li a:focus
+.no-csstransforms .wrapper1 li a:hover, .no-csstransforms .wrapper1 li a:active, .no-csstransforms .wrapper1 li a:focus
   background-color: #f8f8f8
 
-.no-csstransforms .wrapper li.active a
+.no-csstransforms .wrapper1 li.active a
   background-color: #6F325C
   color: #fff
 
-.no-csstransforms .button
+.no-csstransforms .button1
   display: none
 
 /*Responsive*/
@@ -250,10 +278,10 @@ body
 
 
 @media only screen and (max-width: 500px)
-  .no-ccstransforms .wrapper
+  .no-ccstransforms .wrapper1
     padding: .5em
 
-  .no-csstransforms .wrapper li
+  .no-csstransforms .wrapper1 li
     width: 4em
     height: 4em
     font-size: .9em
@@ -261,14 +289,14 @@ body
 
 
 @media only screen and (max-width: 480px)
-  .csstransforms .wrapper
+  .csstransforms .wrapper1
     font-size: .68em
 
   .cn-button
     font-size: 1em
 
 @media only screen and (max-width: 420px)
-  .no-csstransforms .wrapper li
+  .no-csstransforms .wrapper1 li
     width: 100%
     height: 3em
     line-height: 3em
@@ -279,32 +307,209 @@ body
 .txt
   position: absolute
   top: 35px
-  left: 50%
-  margin-left: -208px
-  font-size: 70px
+  font-size: 65px
+  font-family: $font-family
+  z-index: 11
+  padding: 15px 15px 5px
+  text-align: center
+  text-shadow: 0 0 10px #ccc, 0 0 20px #ccc, 0 0 30px #ccc, 0 0 40px #ccc, 0 0 50px #ccc
+  -webkit-transition: all 0.6s
+  -moz-transition: all 0.6s
+  -ms-transition: all 0.6s
+  -o-transition: all 0.6s
+  transition: all 0.6s
+  background-color: #fff
+  width: 100%
+
+.com
+  font-size: 40px
+
+.dot
+  font-size: 90px
+  line-height: 65px
+  color: #ff3670
+  margin-right: 7px
+
+.sub_txt
+  position: absolute
+  top: 120px
+  font-size: 40px
   font-family: $font-family
   z-index: 10
   padding: 15px
   text-align: center
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff
+  text-shadow: 0 0 20px #ccc, 0 0 30px #ccc, 0 0 40px #ccc
+  background-color: #fff
+  width: 100%
+  -webkit-transition: all 1.2s
+  -moz-transition: all 1.2s
+  -ms-transition: all 1.2s
+  -o-transition: all 1.2s
+  transition: all 1.2s
+
+.activated
+  position: absolute
+  top: -350px
+  opacity: 0.2
+
+.wwd
+  font-family: $font-family
+  font-size: 16px
+  border-radius: 50%
+  z-index: 5
+  background-color: $btn_bg_color
+  color: $btn_txt_color
+  position: absolute
+  top: 50%
+  margin-top: -75px
+  margin-left: -75px
+  text-align: center
+  height: 150px
+  width: 150px
   -webkit-transition: all 1s
   -moz-transition: all 1s
   -ms-transition: all 1s
   -o-transition: all 1s
   transition: all 1s
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  border: solid 1px $btn_border_color
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2)
+  -webkit-box-shadow: inset 0 -4px 0 $btn_shadow_color, 0 4px 4px rgba(0, 0, 0, 0.2)
+  -moz-box-shadow: inset 0 -4px 0 $btn_shadow_color, 0 4px 4px rgba(0, 0, 0, 0.2)
+  box-shadow: inset 0 -4px 0 $btn_shadow_color, 0 4px 4px rgba(0, 0, 0, 0.2)
 
-.activated
+
+.all
+  width: 100%
+  height: 100%
+
+.wwd.pt2
+  left: 65%
+  padding: 29px 10px
+  z-index: 7
+
+  a
+    color: #000!important
+    text-decoration: none!important
+
+.wwd.pt3
+  left: 35%
+  padding: 29px 10px
+  z-index: 6
+
+  a
+    color: #000!important
+    text-decoration: none!important
+
+.initial
+  left: 50%!important
+
+.final
+  left: -20%!important
+
+.final2
+  left: 120%!important
+
+.ov
+  font-family: $font-family
+  font-size: 14px
+  border-radius: 50%
+  background-color: #f5f5f5
   position: absolute
-  top: -200px
-  opacity: 0.5
+  top: 10px
+  left: 50%
+  text-align: center
+  height: 120px
+  width: 120px
+  padding: 75px 0 0
+  -webkit-transition: all 0.3s
+  -moz-transition: all 0.3s
+  -ms-transition: all 0.3s
+  -o-transition: all 0.3s
+  transition: all 0.3s
 
+.ov:hover
+  background-color: #e4e4e4
+  top: 40px
+  padding-top: 45px
+
+.ov1
+  margin-left: -320px
+
+.ov2
+  margin-left: -190px
+
+.ov3
+  margin-left: -60px
+
+.ov4
+  margin-left: 70px
+
+.ov5
+  margin-left: 200px
+
+.ov_box
+  position: absolute
+  top: 124px
+  left: 50%
+  margin-left: -330px
+  height: 140px
+  width: 660px
+  background-color: #fff
+  overflow: hidden
+  border: 1px solid $btn_border_color
+  z-index: 5
+  -webkit-transition: all 1.3s
+  -moz-transition: all 1.3s
+  -ms-transition: all 1.3s
+  -o-transition: all 1.3s
+  transition: all 1.3s
+  opacity: 1
+
+.ov_initial
+  top: -300px
+  width: 0
+  margin-left: 0px
+  opacity: 0
+
+.ov_title
+  position: absolute
+  right: 0
+  bottom: -4px
+  color: $btn_border_color
+  text-transform: uppercase
+  font-size: 18px
+  font-family: $font-family
+
+/*Location*/
+
+.loc_txt
+  text-align: right
+  font-size: 16px
+  font-family: $font-family
+  color: $btn_txt_color
+
+.loc_box
+  position: absolute
+  bottom: -43px
+  right: 10%
+  height: 100px
+  background-color: #f5f5f5
+  border: 1px solid $btn_border_color
+  z-index: 5
+  padding: 12px
+
+.under
+  bottom: -200px
 
 /*logo*/
 
-
 .logo
-  width: 182px
+  width: 202px
 
-.csstransforms .wrapper li a:hover, .csstransforms .wrapper li a:active, .csstransforms .wrapper li a:focus
+.csstransforms .wrapper1 li a:hover, .csstransforms .wrapper1 li a:active, .csstransforms .wrapper1 li a:focus
   .logo
-    width: 212px
+    width: 262px
