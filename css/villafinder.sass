@@ -1,12 +1,12 @@
 //**Entry Parameters**//
 $number_links1: 4
-$number_links2: 1
-$number_links3: 1
+$number_links2: 2
+$number_links3: 2
 
 $bg_color: #f2f2f2
 $txt_color: #000
 
-$btn_bg_color: #fff
+$btn_bg_color: #fafafa
 $btn_txt_color: #000
 $btn_border_color: #d6184d
 $btn_shadow_color: rgba(214, 24, 77, 0.30)
@@ -513,3 +513,127 @@ body
 .csstransforms .wrapper1 li a:hover, .csstransforms .wrapper1 li a:active, .csstransforms .wrapper1 li a:focus
   .logo
     width: 262px
+
+/*BTN2*/
+
+.button2
+  position: absolute
+  top: 50%
+  left: 35%
+  z-index: 11
+  margin-top: -75px
+  margin-left: -75px
+  padding: 10px
+  width: 150px
+  height: 150px
+  border: none
+  border-radius: 50%
+  background: none
+  background-color: $btn_bg_color
+  color: $btn_txt_color
+  text-align: center
+  font-size: 16px
+  cursor: pointer
+  -webkit-backface-visibility: hidden
+  font-family: $font-family
+  outline: none!important
+  border: solid 1px $btn_border_color
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2)
+  -webkit-box-shadow: inset 0 -4px 0 $btn_shadow_color, 0 4px 4px rgba(0, 0, 0, 0.2)
+  -moz-box-shadow: inset 0 -4px 0 $btn_shadow_color, 0 4px 4px rgba(0, 0, 0, 0.2)
+  box-shadow: inset 0 -4px 0 $btn_shadow_color, 0 4px 4px rgba(0, 0, 0, 0.2)
+
+.csstransforms .wrapper2
+  position: absolute
+  top: 50%
+  left: 35%
+  z-index: 10
+  margin-top: -17.5em
+  margin-left: -17.5em
+  width: 35em
+  height: 35em
+  border-radius: 50%
+  background: transparent
+  -webkit-transform: scale(0.1)
+  -ms-transform: scale(0.1)
+  -moz-transform: scale(0.1)
+  transform: scale(0.1)
+  pointer-events: none
+  overflow: hidden
+
+  .csstransforms .wrapper2 li
+  position: absolute
+  top: 50%
+  left: 50%
+  overflow: hidden
+  margin-top: -3.3em
+  margin-left: -15em
+  width: 15em
+  height: 15em
+  font-size: 1.5em
+  -webkit-transition: all .3s ease
+  -moz-transition: all .3s ease
+  transition: all .3s ease
+  -webkit-transform: rotate($rotate_angle2) skew($skew_angle2)
+  -moz-transform: rotate($rotate_angle2) skew($skew_angle2)
+  -ms-transform: rotate($rotate_angle2) skew($skew_angle2)
+  transform: rotate($rotate_angle2) skew($skew_angle2)
+  -webkit-transform-origin: 100% 100%
+  -moz-transform-origin: 100% 100%
+  transform-origin: 100% 100%
+  pointer-events: none
+
+.csstransforms .wrapper2 li a
+  position: absolute
+  right: -9.25em
+  bottom: -9.25em
+  display: block
+  width: 18.5em
+  height: 18.5em
+  border-radius: 50%
+  background: $link_bg_color
+  background: -webkit-radial-gradient(transparent 34%, $link_bg_color 35%, $link_bg_color 62%, transparent 63%)
+  background: -moz-radial-gradient(transparent 34%, $link_bg_color 35%, $link_bg_color 62%, transparent 63%)
+  background: radial-gradient(transparent 34%, $link_bg_color 35%, $link_bg_color 62%, transparent 63%)
+  padding-top: 45px
+  color: $link_txt_color
+  text-align: center
+  text-decoration: none
+  font-size: 1.2em
+  line-height: 2
+  -webkit-transform: skew($skew_angle2) rotate($rotate_angle2) scale(1)
+  -moz-transform: skew($skew_angle2) rotate($rotate_angle2) scale(1)
+  -ms-transform: skew($skew_angle2) rotate($rotate_angle2) scale(1)
+  transform: skew($skew_angle2) rotate($rotate_angle2) scale(1)
+  -webkit-backface-visibility: hidden
+  backface-visibility: hidden
+  pointer-events: auto
+
+.csstransforms .wrapper2 li:first-child
+  -webkit-transform: rotate(0.5*$central_angle2 + 0*$central_angle2) skew($unskew_angle2)
+  -ms-transform: rotate(0.5*$central_angle2 +0*$central_angle2) skew($unskew_angle2)
+  -moz-transform: rotate(0.5*$central_angle2 +0*$central_angle2) skew($unskew_angle2)
+  transform: rotate(0.5*$central_angle2 +0*$central_angle2) skew($unskew_angle2)
+
+@for $i from 2 through $number_links2
+  .csstransforms .wrapper1 li:nth-child(#{$i})
+    -webkit-transform: rotate(0.5*$central_angle2 + $i*$central_angle2 - $central_angle2) skew($unskew_angle2)
+    -ms-transform: rotate(0.5*$central_angle2 + $i*$central_angle2 - $central_angle2) skew($unskew_angle2)
+    -moz-transform: rotate(0.5*$central_angle2 + $i*$central_angle2 - $central_angle2) skew($unskew_angle2)
+    transform: rotate(0.5*$central_angle2 + $i*$central_angle2 - $central_angle2) skew($unskew_angle2)
+
+.csstransforms .wrapper2 li a span
+  position: relative
+  top: 1.8em
+  display: block
+  font-size: .5em
+  font-weight: 700
+  font-family: $font-family
+
+.csstransforms .wrapper2 li a:hover,
+.csstransforms .wrapper2 li a:active,
+.csstransforms .wrapper2 li a:focus
+  background: -webkit-radial-gradient(transparent 44.5%, $link_bg_color_hover 45%)
+  background: -moz-radial-gradient(transparent 44.5%, $link_bg_color_hover 45%)
+  background: radial-gradient(transparent 44.5%, $link_bg_color_hover 45%)
+  padding-top: 15px
