@@ -1,0 +1,37 @@
+AddType application/vnd.ms-fontobject .eot
+AddType font/ttf .ttf
+AddType font/otf .otf
+AddType application/font-woff .woff
+
+<FilesMatch "\.(ttf|otf|eot|woff)$">
+        <IfModule mod_headers.c>
+                Header set Access-Control-Allow-Origin "*"
+        </IfModule>
+</FilesMatch>
+##Header append Vary User-Agent
+<IfModule mod_rewrite.c>
+#	AuthUserFile /home/ubuntu/.htpasswd
+#	AuthName "Authorization Required"
+#	AuthType Basic
+#	require valid-user
+
+        Options +FollowSymlinks
+        RewriteEngine On
+        RewriteCond %{HTTP_HOST} ^villa-finder.com
+        RewriteRule (.*) www.villa-finder.com/$1 [R=301,L]
+</IfModule>
+<Ifmodule mod_deflate.c>
+        SetOutputFilter DEFLATE
+        AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
+</Ifmodule>
+<IfModule mod_expires.c>
+        ExpiresActive On
+        ExpiresDefault "access plus 1 month"
+        ExpiresByType image/x-icon "access plus 1 year"
+        ExpiresByType image/gif "access plus 1 month"
+        ExpiresByType image/png "access plus 1 month"
+        ExpiresByType image/jpg "access plus 1 month"
+        ExpiresByType image/jpeg "access plus 1 month"
+        ExpiresByType text/css "access 1 month"
+        ExpiresByType application/javascript "access plus 1 year"
+</IfModule>
