@@ -1,4 +1,3 @@
-<IfModule mod_rewrite.c>
-        RewriteCond %{HTTP_HOST} ^villa-finder.com
-        RewriteRule (.*) http://www.villa-finder.com [R=301,L]
-</IfModule>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
