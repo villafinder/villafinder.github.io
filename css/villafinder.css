@@ -29,7 +29,7 @@ body {
 }
 
 body {
-  background-color: #fafafa;
+  background-color: #f6f6f6;
   overflow: hidden;
 }
 
@@ -50,7 +50,7 @@ body {
 
 .cover2 {
   padding-left: 30%;
-  background-image: url(../images/background2.png);
+  background-image: url(../images/background_wb.jpg);
   background-repeat: no-repeat;
   background-position: 0% 50%;
   -webkit-background-size: cover;
@@ -61,7 +61,7 @@ body {
 
 .cover3 {
   padding-right: 30%;
-  background-image: url(../images/background3.png);
+  background-image: url(../images/background_iv.jpg);
   background-repeat: no-repeat;
   background-position: 100% 50%;
   -webkit-background-size: cover;
