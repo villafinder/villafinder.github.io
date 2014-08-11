@@ -562,16 +562,10 @@ body {
 .ie678 body {
   overflow: inherit;
 }
-.ie678 .txt {
-  top: 38px;
-  border-top: 1px solid #d6184d;
-}
-.ie678 .sub_txt {
-  border-bottom: 1px solid #d6184d;
-}
 .ie678 .loc_box {
   bottom: 0;
   height: 60px;
+  padding: 10px 10px 0;
   border-bottom-color: transparent;
 }
 .ie678 .bloc_ie {
@@ -582,7 +576,7 @@ body {
   margin-left: -330px;
   background-color: white;
   width: 660px;
-  padding: 15px;
+  padding: 15px 0;
   text-align: center;
   border: 1px solid #d6184d;
 }
@@ -622,4 +616,10 @@ body {
 }
 .ie678 .ov:hover {
   top: 10px;
+}
+
+@media (max-width: 767px) {
+  body {
+    overflow: inherit;
+  }
 }

@@ -521,16 +521,10 @@ body
   body
     overflow: inherit
 
-  .txt
-    top: 38px
-    border-top: 1px solid $btn_border_color
-
-  .sub_txt
-    border-bottom: 1px solid $btn_border_color
-
   .loc_box
     bottom: 0
     height: 60px
+    padding: 10px 10px 0
     border-bottom-color: transparent
 
   .bloc_ie
@@ -541,7 +535,7 @@ body
     margin-left: -330px
     background-color: #fff
     width: 660px
-    padding: 15px
+    padding: 15px 0
     text-align: center
     border: 1px solid $btn_border_color
     p
@@ -572,9 +566,6 @@ body
       margin-left: -512px
 
 
-
-
-
   .overlay, .cover1, .cover2, .cover3, .button1, .button2, .button3, .wrapper1, .wrapper2, .wrapper3
     display: none
 
@@ -583,3 +574,8 @@ body
 
   .ov:hover
     top: 10px
+
+@media (max-width: 767px)
+  body
+    overflow: inherit
+
