@@ -1,21 +1,6 @@
-@font-face {
-  font-family: "caviar_dreamsregular";
-  src: url("../fonts/CaviarDreams-webfont.eot");
-  src: url("../fonts/CaviarDreams-webfont.eot?#iefix") format("embedded-opentype");
-  src: url("../fonts/CaviarDreams-webfont.woff") format("woff");
-  src: url("../fonts/CaviarDreams-webfont.ttf") format("truetype");
-  src: url("../fonts/CaviarDreams-webfont.svg#caviar_dreamsregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-.font {
-  font-family: "caviar_dreamsregular";
-}
-
 * {
   position: relative;
   -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -39,12 +24,17 @@ body {
   height: 100%;
   opacity: 1;
   -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
 }
 
 .cover1 {
   background: url(http://cdn.asian-villa.com/images/finder/background-1350.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -53,9 +43,7 @@ body {
   background-image: url(../images/background_wb.jpg);
   background-repeat: no-repeat;
   background-position: 0% 50%;
-  -webkit-background-size: cover;
   background-size: cover;
-  -webkit-background-origin: content-box;
   background-origin: content-box;
 }
 
@@ -64,9 +52,7 @@ body {
   background-image: url(../images/background_iv.jpg);
   background-repeat: no-repeat;
   background-position: 100% 50%;
-  -webkit-background-size: cover;
   background-size: cover;
-  -webkit-background-origin: content-box;
   background-origin: content-box;
 }
 
@@ -85,6 +71,7 @@ body {
   right: 0;
   opacity: 0.8;
   -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
   z-index: 2;
 }
@@ -113,8 +100,12 @@ body {
   border: solid 1px #d6184d;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: inset 0 -4px 0 rgba(214, 24, 77, 0.3), 0 4px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -4px 0 rgba(214, 24, 77, 0.3), 0 4px 4px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 -4px 0 rgba(214, 24, 77, 0.3), 0 4px 4px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
   transition: all 1s;
 }
 
@@ -165,6 +156,7 @@ body {
   background: transparent;
   -webkit-transform: scale(0.1);
   -ms-transform: scale(0.1);
+  -moz-transform: scale(0.1);
   transform: scale(0.1);
   pointer-events: none;
   overflow: hidden;
@@ -181,9 +173,10 @@ body {
   height: 15em;
   font-size: 1.5em;
   -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
   -webkit-transform-origin: 100% 100%;
-  -ms-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
   transform-origin: 100% 100%;
   pointer-events: none;
 }
@@ -197,6 +190,7 @@ body {
   border-radius: 50%;
   background: white;
   background: -webkit-radial-gradient(transparent 34%, white 35%, white 62%, transparent 63%);
+  background: -moz-radial-gradient(transparent 34%, white 35%, white 62%, transparent 63%);
   background: radial-gradient(transparent 34%, white 35%, white 62%, transparent 63%);
   padding-top: 45px;
   color: white;
@@ -210,11 +204,13 @@ body {
 }
 .csstransforms .wrapper1 li .blank, .csstransforms .wrapper2 li .blank, .csstransforms .wrapper3 li .blank {
   background: -webkit-radial-gradient(transparent 34%, #d6184d 35%, #d6184d 62%, transparent 63%) !important;
+  background: -moz-radial-gradient(transparent 34%, #d6184d 35%, #d6184d 62%, transparent 63%) !important;
   background: radial-gradient(transparent 34%, #d6184d 35%, #d6184d 62%, transparent 63%) !important;
   padding-top: 45px !important;
 }
 .csstransforms .wrapper1 li .blank span, .csstransforms .wrapper2 li .blank span, .csstransforms .wrapper3 li .blank span {
   -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   font-size: 30px;
@@ -227,11 +223,13 @@ body {
 }
 .csstransforms .wrapper1 li {
   -webkit-transform: rotate(-45deg) skew(0deg);
+  -moz-transform: rotate(-45deg) skew(0deg);
   -ms-transform: rotate(-45deg) skew(0deg);
   transform: rotate(-45deg) skew(0deg);
 }
 .csstransforms .wrapper1 li a {
   -webkit-transform: skew(0deg) rotate(-45deg) scale(1);
+  -moz-transform: skew(0deg) rotate(-45deg) scale(1);
   -ms-transform: skew(0deg) rotate(-45deg) scale(1);
   transform: skew(0deg) rotate(-45deg) scale(1);
 }
@@ -241,11 +239,13 @@ body {
 }
 .csstransforms .wrapper2 li {
   -webkit-transform: rotate(-30deg) skew(30deg);
+  -moz-transform: rotate(-30deg) skew(30deg);
   -ms-transform: rotate(-30deg) skew(30deg);
   transform: rotate(-30deg) skew(30deg);
 }
 .csstransforms .wrapper2 li a {
   -webkit-transform: skew(30deg) rotate(-30deg) scale(1);
+  -moz-transform: skew(30deg) rotate(-30deg) scale(1);
   -ms-transform: skew(30deg) rotate(-30deg) scale(1);
   transform: skew(30deg) rotate(-30deg) scale(1);
 }
@@ -255,17 +255,20 @@ body {
 }
 .csstransforms .wrapper3 li {
   -webkit-transform: rotate(-30deg) skew(30deg);
+  -moz-transform: rotate(-30deg) skew(30deg);
   -ms-transform: rotate(-30deg) skew(30deg);
   transform: rotate(-30deg) skew(30deg);
 }
 .csstransforms .wrapper3 li a {
   -webkit-transform: skew(30deg) rotate(-30deg) scale(1);
+  -moz-transform: skew(30deg) rotate(-30deg) scale(1);
   -ms-transform: skew(30deg) rotate(-30deg) scale(1);
   transform: skew(30deg) rotate(-30deg) scale(1);
 }
 
 .transition {
   -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
   opacity: 1;
 }
@@ -274,8 +277,10 @@ body {
   border-radius: 50%;
   opacity: 1;
   -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   -webkit-transform: scale(1);
+  -moz-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
   pointer-events: auto;
@@ -284,60 +289,70 @@ body {
 .csstransforms .wrapper1 li:first-child {
   -webkit-transform: rotate(45deg) skew(0deg);
   -ms-transform: rotate(45deg) skew(0deg);
+  -moz-transform: rotate(45deg) skew(0deg);
   transform: rotate(45deg) skew(0deg);
 }
 
 .csstransforms .wrapper1 li:nth-child(2) {
   -webkit-transform: rotate(135deg) skew(0deg);
   -ms-transform: rotate(135deg) skew(0deg);
+  -moz-transform: rotate(135deg) skew(0deg);
   transform: rotate(135deg) skew(0deg);
 }
 
 .csstransforms .wrapper1 li:nth-child(3) {
   -webkit-transform: rotate(225deg) skew(0deg);
   -ms-transform: rotate(225deg) skew(0deg);
+  -moz-transform: rotate(225deg) skew(0deg);
   transform: rotate(225deg) skew(0deg);
 }
 
 .csstransforms .wrapper1 li:nth-child(4) {
   -webkit-transform: rotate(315deg) skew(0deg);
   -ms-transform: rotate(315deg) skew(0deg);
+  -moz-transform: rotate(315deg) skew(0deg);
   transform: rotate(315deg) skew(0deg);
 }
 
 .csstransforms .wrapper2 li:first-child {
   -webkit-transform: rotate(90deg) skew(-30deg);
   -ms-transform: rotate(90deg) skew(-30deg);
+  -moz-transform: rotate(90deg) skew(-30deg);
   transform: rotate(90deg) skew(-30deg);
 }
 
 .csstransforms .wrapper2 li:nth-child(2) {
   -webkit-transform: rotate(210deg) skew(-30deg);
   -ms-transform: rotate(210deg) skew(-30deg);
+  -moz-transform: rotate(210deg) skew(-30deg);
   transform: rotate(210deg) skew(-30deg);
 }
 
 .csstransforms .wrapper2 li:nth-child(3) {
   -webkit-transform: rotate(330deg) skew(-30deg);
   -ms-transform: rotate(330deg) skew(-30deg);
+  -moz-transform: rotate(330deg) skew(-30deg);
   transform: rotate(330deg) skew(-30deg);
 }
 
 .csstransforms .wrapper3 li:first-child {
   -webkit-transform: rotate(90deg) skew(-30deg);
   -ms-transform: rotate(90deg) skew(-30deg);
+  -moz-transform: rotate(90deg) skew(-30deg);
   transform: rotate(90deg) skew(-30deg);
 }
 
 .csstransforms .wrapper3 li:nth-child(2) {
   -webkit-transform: rotate(210deg) skew(-30deg);
   -ms-transform: rotate(210deg) skew(-30deg);
+  -moz-transform: rotate(210deg) skew(-30deg);
   transform: rotate(210deg) skew(-30deg);
 }
 
 .csstransforms .wrapper3 li:nth-child(3) {
   -webkit-transform: rotate(330deg) skew(-30deg);
   -ms-transform: rotate(330deg) skew(-30deg);
+  -moz-transform: rotate(330deg) skew(-30deg);
   transform: rotate(330deg) skew(-30deg);
 }
 
@@ -353,12 +368,14 @@ body {
 .csstransforms .wrapper2 li a:hover, .csstransforms .wrapper2 li a:active, .csstransforms .wrapper2 li a:focus,
 .csstransforms .wrapper3 li a:hover, .csstransforms .wrapper3 li a:active, .csstransforms .wrapper3 li a:focus {
   background: -webkit-radial-gradient(transparent 44.5%, #ff696e 45%);
+  background: -moz-radial-gradient(transparent 44.5%, #ff696e 45%);
   background: radial-gradient(transparent 44.5%, #ff696e 45%);
   padding-top: 15px;
 }
 
 .csstransforms .opened-nav li {
   -webkit-transition: all 0.3s ease 0.3s;
+  -moz-transition: all 0.3s ease 0.3s;
   transition: all 0.3s ease 0.3s;
 }
 
@@ -416,6 +433,9 @@ body {
   text-align: center;
   text-shadow: 0 0 10px #cccccc, 0 0 20px #cccccc, 0 0 30px #cccccc, 0 0 40px #cccccc, 0 0 50px #cccccc;
   -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
   transition: all 0.6s;
   background-color: white;
   width: 100%;
@@ -435,6 +455,9 @@ body {
   background-color: white;
   width: 100%;
   -webkit-transition: all 1.2s;
+  -moz-transition: all 1.2s;
+  -ms-transition: all 1.2s;
+  -o-transition: all 1.2s;
   transition: all 1.2s;
 }
 
@@ -456,6 +479,9 @@ body {
   width: 120px;
   padding: 75px 0 0;
   -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -497,6 +523,9 @@ body {
   border: 1px solid #d6184d;
   z-index: 5;
   -webkit-transition: all 1.3s;
+  -moz-transition: all 1.3s;
+  -ms-transition: all 1.3s;
+  -o-transition: all 1.3s;
   transition: all 1.3s;
   opacity: 1;
 }
@@ -534,6 +563,9 @@ body {
   z-index: 5;
   padding: 12px;
   -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
   transition: all 0.6s;
 }
 
