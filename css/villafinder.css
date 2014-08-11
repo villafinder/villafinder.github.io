@@ -562,6 +562,9 @@ body {
 .ie678 body {
   overflow: inherit;
 }
+.ie678 .txt {
+  top: 38px;
+}
 .ie678 .loc_box {
   bottom: 0;
   height: 60px;
@@ -618,7 +621,8 @@ body {
   top: 10px;
 }
 
-@media (handheld) and (max-width: 767px) {
+/*Mobile */
+@media (max-width: 767px) {
   html, body {
     overflow: inherit;
   }
