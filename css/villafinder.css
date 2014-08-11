@@ -11,11 +11,11 @@ html,
 body {
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 body {
   background-color: #f6f6f6;
-  overflow: hidden;
 }
 
 .cover1, .cover2, .cover3 {
@@ -31,7 +31,6 @@ body {
 }
 
 .cover1 {
-  background-color: #f6f6f6;
   background: url(http://cdn.asian-villa.com/images/finder/background-1350.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -392,64 +391,13 @@ body {
   transition: all 0.4s ease 0.3s;
 }
 
-/*No Transform */
-.no-csstransforms .wrapper1, .no-csstransforms .wrapper2, .no-csstransforms .wrapper3 {
-  overflow: hidden;
-  margin: 10em auto;
-  padding: 0.5em;
-  text-align: center;
-}
-
-.no-csstransforms .wrapper1 ul, .no-csstransforms .wrapper2 ul, .no-csstransforms .wrapper3 ul {
-  display: inline-block;
-}
-
-.no-csstransforms .wrapper1 li, .no-csstransforms .wrapper2 li, .no-csstransforms .wrapper3 li {
-  float: left;
-  width: 20em;
-  height: 5em;
-  background-color: white;
-  text-align: center;
-  font-size: 1em;
-  line-height: 5em;
-}
-.no-csstransforms .wrapper1 li a, .no-csstransforms .wrapper2 li a, .no-csstransforms .wrapper3 li a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  color: inherit;
-  text-decoration: none;
-}
-.no-csstransforms .wrapper1 li .blank, .no-csstransforms .wrapper2 li .blank, .no-csstransforms .wrapper3 li .blank {
-  display: none;
-}
-
-.no-csstransforms .wrapper1 li a:hover, .no-csstransforms .wrapper1 li a:active, .no-csstransforms .wrapper1 li a:focus,
-.no-csstransforms .wrapper2 li a:hover, .no-csstransforms .wrapper2 li a:active, .no-csstransforms .wrapper2 li a:focus,
-.no-csstransforms .wrapper3 li a:hover, .no-csstransforms .wrapper3 li a:active, .no-csstransforms .wrapper3 li a:focus {
-  background-color: #f8f8f8;
-}
-
-.no-csstransforms .wrapper1 li.active a, .no-csstransforms .wrapper2 li.active a, .no-csstransforms .wrapper3 li.active a {
-  background-color: #6f325c;
-  color: white;
-}
-
-.no-csstransforms .button1, .no-csstransforms .button2, .no-csstransforms .button3 {
-  display: none;
-}
-
-.ie678 .overlay {
-  display: none !important;
-}
-
 /*Welcome message */
 .txt {
   position: absolute;
   top: 35px;
   font-size: 65px;
   z-index: 11;
-  padding: 15px 15px 5px;
+  padding: 15px;
   text-align: center;
   text-shadow: 0 0 10px #cccccc, 0 0 20px #cccccc, 0 0 30px #cccccc, 0 0 40px #cccccc, 0 0 50px #cccccc;
   -webkit-transition: all 0.6s;
@@ -563,8 +511,8 @@ body {
 
 .ov_title {
   position: absolute;
-  right: 0;
-  bottom: -4px;
+  right: 1px;
+  bottom: -3px;
   color: #d6184d;
   text-transform: uppercase;
   font-size: 18px;
@@ -604,4 +552,48 @@ body {
 /*logo */
 .logo {
   width: 202px;
+}
+
+/*IE */
+.bloc_ie {
+  display: none;
+}
+
+.ie678 body {
+  overflow: inherit;
+}
+.ie678 .loc_box {
+  bottom: 0;
+  height: 60px;
+}
+.ie678 .bloc_ie {
+  display: inherit;
+  position: relative;
+  top: 300px;
+  background-color: white;
+  margin: 0 30px;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #d6184d;
+}
+.ie678 .bloc_ie p {
+  font-size: 22px;
+}
+.ie678 .bloc_ie li {
+  margin: 5px 0;
+}
+.ie678 .bloc_ie .last {
+  margin-bottom: 15px;
+}
+.ie678 .cover1 {
+  background-image: url(http://cdn.asian-villa.com/images/finder/background-1350.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+}
+.ie678 .overlay, .ie678 .cover2, .ie678 .cover3, .ie678 .button1, .ie678 .button2, .ie678 .button3, .ie678 .wrapper1, .ie678 .wrapper2, .ie678 .wrapper3 {
+  display: none;
+}
+.ie678 .ov {
+  padding-top: 85px;
 }
