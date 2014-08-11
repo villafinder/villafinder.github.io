@@ -31,9 +31,7 @@ body {
 }
 
 .cover1 {
-  background-image: url(http://cdn.asian-villa.com/images/finder/background-1350.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-color: #f6f6f6;
   background: url(http://cdn.asian-villa.com/images/finder/background-1350.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -432,10 +430,6 @@ body {
 .no-csstransforms .wrapper1 li.active a, .no-csstransforms .wrapper2 li.active a, .no-csstransforms .wrapper3 li.active a {
   background-color: #6f325c;
   color: white;
-}
-
-.no-csstransforms .button1, .no-csstransforms .button2, .no-csstransforms .button3 {
-  display: none;
 }
 
 /*Welcome message */

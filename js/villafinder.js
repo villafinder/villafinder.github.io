@@ -21,17 +21,17 @@
         cover3 = document.getElementById('cover3'),
         overlay = document.getElementById('overlay');
 
-    //function load() {
-    //    classie.remove(welcome, 'activated');
+    function load() {
+    //   classie.remove(welcome, 'activated');
     //   classie.remove(subwelcome, 'activated');
-    //    classie.remove(ovbox, 'ov_initial');
+    //   classie.remove(ovbox, 'ov_initial');
     //   classie.remove(button2, 'btn_initial');
-    // classie.remove(button3, 'btn_initial');
+    //   classie.remove(button3, 'btn_initial');
     //   classie.remove(wrapper2, 'btn_initial');
-    //  classie.remove(wrapper3, 'btn_initial');
-    //}
+    //   classie.remove(wrapper3, 'btn_initial');
+    }
 
-    //window.onload = load;
+    window.onload = load;
 
     //open and close menu when the button is clicked
     var open1 = false;
