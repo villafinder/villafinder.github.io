@@ -394,7 +394,6 @@ body {
 
 /*IE... */
 .no-csstransforms .wrapper1, .no-csstransforms .wrapper2, .no-csstransforms .wrapper3 {
-  overflow: hidden;
   margin: 10em auto;
   padding: 0.5em;
   text-align: center;
@@ -430,6 +429,16 @@ body {
 .no-csstransforms .wrapper1 li.active a, .no-csstransforms .wrapper2 li.active a, .no-csstransforms .wrapper3 li.active a {
   background-color: #6f325c;
   color: white;
+}
+
+.no-csstransforms .button1, .no-csstransforms .button2, .no-csstransforms .button3 {
+  display: none;
+}
+
+.no-csstransforms .cover1 {
+  background-image: url("http://cdn.asian-villa.com/images/finder/background-1350.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 /*Welcome message */
