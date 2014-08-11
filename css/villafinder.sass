@@ -523,17 +523,19 @@ body
 
   .loc_box
     bottom: 0
-    height: 60px
+    height: 40px
+    border-bottom-color: $bg_color
 
   .bloc_ie
-    display: inherit
+    display: block!important
     position: relative
     top: 300px
     background-color: #fff
-    margin: 0 30px
+    margin: 0 60px
     padding: 15px
     text-align: center
     border: 1px solid $btn_border_color
+    border-color: $btn_border_color!important
     p
       font-size: 22px
     li
@@ -542,14 +544,12 @@ body
       margin-bottom: 15px
 
   .cover1
-    background-image: url(http://cdn.asian-villa.com/images/finder/background-1350.jpg)
-    background-repeat: no-repeat
-    background-size: 100% 100%
-    background-position: 50% 50%
+    background: inherit
+    background-color: #ccc
 
   .overlay, .cover2, .cover3, .button1, .button2, .button3, .wrapper1, .wrapper2, .wrapper3
     display: none
 
   .ov
-    padding-top: 85px
+    padding-top: 85px!important
 

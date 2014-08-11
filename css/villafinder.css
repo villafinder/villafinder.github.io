@@ -564,17 +564,19 @@ body {
 }
 .ie678 .loc_box {
   bottom: 0;
-  height: 60px;
+  height: 40px;
+  border-bottom-color: #f6f6f6;
 }
 .ie678 .bloc_ie {
-  display: inherit;
+  display: block !important;
   position: relative;
   top: 300px;
   background-color: white;
-  margin: 0 30px;
+  margin: 0 60px;
   padding: 15px;
   text-align: center;
   border: 1px solid #d6184d;
+  border-color: #d6184d !important;
 }
 .ie678 .bloc_ie p {
   font-size: 22px;
@@ -586,14 +588,12 @@ body {
   margin-bottom: 15px;
 }
 .ie678 .cover1 {
-  background-image: url(http://cdn.asian-villa.com/images/finder/background-1350.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: 50% 50%;
+  background: inherit;
+  background-color: #cccccc;
 }
 .ie678 .overlay, .ie678 .cover2, .ie678 .cover3, .ie678 .button1, .ie678 .button2, .ie678 .button3, .ie678 .wrapper1, .ie678 .wrapper2, .ie678 .wrapper3 {
   display: none;
 }
 .ie678 .ov {
-  padding-top: 85px;
+  padding-top: 85px !important;
 }
