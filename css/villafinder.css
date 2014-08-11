@@ -126,35 +126,35 @@ body {
 }
 
 .btn2_final {
-  -webkit-transform: translate(-400%, 0);
-  -moz-transform: translate(-400%, 0);
-  -ms-transform: translate(-400%, 0);
-  -o-transform: translate(-400%, 0);
-  transform: translate(-400%, 0);
+  -webkit-transform: translate(-500%, 0);
+  -moz-transform: translate(-500%, 0);
+  -ms-transform: translate(-500%, 0);
+  -o-transform: translate(-500%, 0);
+  transform: translate(-500%, 0);
 }
 
 .btn3_final {
-  -webkit-transform: translate(400%, 0);
-  -moz-transform: translate(400%, 0);
-  -ms-transform: translate(400%, 0);
-  -o-transform: translate(400%, 0);
-  transform: translate(400%, 0);
+  -webkit-transform: translate(500%, 0);
+  -moz-transform: translate(500%, 0);
+  -ms-transform: translate(500%, 0);
+  -o-transform: translate(500%, 0);
+  transform: translate(500%, 0);
 }
 
 .btn1_final2 {
-  -webkit-transform: translate(600%, 0);
-  -moz-transform: translate(600%, 0);
-  -ms-transform: translate(600%, 0);
-  -o-transform: translate(600%, 0);
-  transform: translate(600%, 0);
+  -webkit-transform: translate(700%, 0);
+  -moz-transform: translate(700%, 0);
+  -ms-transform: translate(700%, 0);
+  -o-transform: translate(700%, 0);
+  transform: translate(700%, 0);
 }
 
 .btn1_final3 {
-  -webkit-transform: translate(-600%, 0);
-  -moz-transform: translate(-600%, 0);
-  -ms-transform: translate(-600%, 0);
-  -o-transform: translate(-600%, 0);
-  transform: translate(-600%, 0);
+  -webkit-transform: translate(-700%, 0);
+  -moz-transform: translate(-700%, 0);
+  -ms-transform: translate(-700%, 0);
+  -o-transform: translate(-700%, 0);
+  transform: translate(-700%, 0);
 }
 
 .csstransforms .wrapper1, .csstransforms .wrapper2, .csstransforms .wrapper3 {
@@ -392,8 +392,9 @@ body {
   transition: all 0.4s ease 0.3s;
 }
 
-/*IE... */
+/*No Transform */
 .no-csstransforms .wrapper1, .no-csstransforms .wrapper2, .no-csstransforms .wrapper3 {
+  overflow: hidden;
   margin: 10em auto;
   padding: 0.5em;
   text-align: center;
@@ -405,7 +406,7 @@ body {
 
 .no-csstransforms .wrapper1 li, .no-csstransforms .wrapper2 li, .no-csstransforms .wrapper3 li {
   float: left;
-  width: 5em;
+  width: 20em;
   height: 5em;
   background-color: white;
   text-align: center;
@@ -418,6 +419,9 @@ body {
   height: 100%;
   color: inherit;
   text-decoration: none;
+}
+.no-csstransforms .wrapper1 li .blank, .no-csstransforms .wrapper2 li .blank, .no-csstransforms .wrapper3 li .blank {
+  display: none;
 }
 
 .no-csstransforms .wrapper1 li a:hover, .no-csstransforms .wrapper1 li a:active, .no-csstransforms .wrapper1 li a:focus,
@@ -435,10 +439,12 @@ body {
   display: none;
 }
 
-.no-csstransforms .cover1 {
-  background-image: url("http://cdn.asian-villa.com/images/finder/background-1350.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+.no-csstransforms .overlay {
+  display: none;
+}
+
+.no-csstransforms .cover2, .no-csstransforms .cover3 {
+  display: none;
 }
 
 /*Welcome message */
