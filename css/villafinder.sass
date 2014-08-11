@@ -575,7 +575,162 @@ body
   .ov:hover
     top: 10px
 
-@media (max-width: 767px)
-  body
+@media (handheld) and (max-width: 767px)
+
+  html, body
     overflow: inherit
+
+  .loc_box
+    position: relative
+    bottom: inherit
+    right: inherit
+    left: 50%
+    width: 228px
+    height: 60px
+    padding: 12px
+    margin: 232px 0 0 -114px
+    border-bottom: none
+    background-color: $link_bg_color
+
+  .loc_txt
+    text-align: center
+
+  .logo_finder
+    width: 250px
+
+  .txt
+    font-size: inherit
+    top: 5px
+
+  .sub_txt
+    font-size: 22px
+    top: 55px
+    border-bottom: 1px solid $btn_border_color
+
+  .ov_box
+    top: 64px
+    width: 100%
+    margin: 0
+    left: inherit
+    border-left: none
+    border-right: none
+
+  .ov
+    font-size: 12px
+    border-radius: 50%
+    position: absolute
+    text-align: center
+    height: 90px
+    width: 90px
+    padding: 45px 0 0
+
+  .ov1, .ov1:hover
+    top: 95px
+    margin-left: -95px
+    z-index: 1
+    background-color: #e4e4e4
+    padding: 25px 0 0
+
+  .ov2, .ov2:hover
+    top: 30px
+    margin-left: -145px
+    z-index: 2
+    background-color: #f5f5f5
+
+  .ov3, .ov3:hover
+    top: 30px
+    margin-left: -45px
+    z-index: 2
+    background-color: #f5f5f5
+
+  .ov4, .ov4:hover
+    top: 30px
+    margin-left: 55px
+    z-index: 2
+    background-color: #f5f5f5
+
+  .ov5, .ov5:hover
+    top: 95px
+    margin-left: 5px
+    z-index: 1
+    background-color: #e4e4e4
+    padding: 25px 0 0
+
+  .ov_title
+    display: none
+
+  .overlay, .cover1, .cover2, .cover3, .button1, .button2, .button3, .wrapper1, .wrapper2, .wrapper3
+    display: none
+
+  .bloc_ie
+    display: block!important
+    position: relative
+    top: 218px
+    background-color: $link_bg_color
+    background-origin: content-box
+    width: 100%
+    padding: 15px
+    text-align: center
+    border-bottom: 1px solid $btn_border_color
+    border-top: 1px solid $btn_border_color
+    p
+      font-size: 15px
+    li
+      height: 100px
+      width: 100%
+      margin: 5px 0
+      div
+        border: 1px solid #333
+        height: 100px
+        padding-top: 32px
+      .iv
+        background: url(../images/mobile_iv.jpg) no-repeat center center scroll
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        -o-background-size: cover
+        background-size: cover
+      .vb
+        background: url(../images/mobile_vb.jpg) no-repeat center center scroll
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        -o-background-size: cover
+        background-size: cover
+      .vp
+        background: url(../images/mobile_vp.jpg) no-repeat center center scroll
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        -o-background-size: cover
+        background-size: cover
+      .wb
+        background: url(../images/mobile_wb.jpg) no-repeat center center scroll
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        -o-background-size: cover
+        background-size: cover
+        padding-top: 28px
+      .slv
+        background: url(../images/mobile_slv.jpg) no-repeat center center scroll
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        -o-background-size: cover
+        background-size: cover
+      .sv
+        background: url(../images/mobile_sv.jpg) no-repeat center center scroll
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        -o-background-size: cover
+        background-size: cover
+      .soon
+        background-color: $link_bg_color_hover
+        color: $link_txt_color
+        padding-top: 41px
+
+    .last
+      margin-bottom: 15px
+
+
+
+
+
+
 
