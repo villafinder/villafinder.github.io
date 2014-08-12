@@ -19,24 +19,14 @@
         cover1 = document.getElementById('cover1'),
         cover2 = document.getElementById('cover2'),
         cover3 = document.getElementById('cover3'),
-        overlay = document.getElementById('overlay');
+        overlay = document.getElementById('overlay'),
 
-    function load() {
-    //   classie.remove(welcome, 'activated');
-    //   classie.remove(subwelcome, 'activated');
-    //   classie.remove(ovbox, 'ov_initial');
-    //   classie.remove(button2, 'btn_initial');
-    //   classie.remove(button3, 'btn_initial');
-    //   classie.remove(wrapper2, 'btn_initial');
-    //   classie.remove(wrapper3, 'btn_initial');
-    }
-
-    window.onload = load;
+        c = 0;
 
     //open and close menu when the button is clicked
-    var open1 = false;
-    var open2 = false;
-    var open3 = false;
+    var open1 = false,
+        open2 = false,
+        open3 = false;
 
     button1.addEventListener('click', handler1, false);
     button2.addEventListener('click', handler2, false);
@@ -155,6 +145,8 @@
         classie.remove(cover1, 'no_cover');
         classie.add(cover2, 'no_cover');
         classie.add(cover3, 'no_cover');
+        c=c+1;
+        if (c>=8){button1.innerHTML = "We like these buttons too but maybe you can visit our other websites, they're cool too!";}
     }
     function openNav2(){
         closeNav1();
@@ -175,6 +167,8 @@
         classie.add(cover1, 'no_cover');
         classie.remove(cover2, 'no_cover');
         classie.add(cover3, 'no_cover');
+        c=c+1;
+        if (c>=8){button2.innerHTML = "We like these buttons too but maybe you can visit our other websites, they're cool too!";}
     }
     function openNav3(){
         closeNav1();
@@ -195,7 +189,12 @@
         classie.add(cover1, 'no_cover');
         classie.add(cover2, 'no_cover');
         classie.remove(cover3, 'no_cover');
+        c=c+1;
+        if (c>=8){button3.innerHTML = "We like these buttons too but maybe you can visit our other websites, they're cool too!";}
     }
+
+
+
 
 
 
