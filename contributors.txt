@@ -1,3 +1,0 @@
-James Farinha
-
-using a tutorial by SARA SOUEIDAN available on http://tympanus.net/codrops for the circular navigation.

@@ -1,0 +1,12 @@
+# Site settings
+title: Villa-Finder.com
+email: your-email@domain.com
+description: ""
+baseurl: ""
+url: "http://yourdomain.com"
+twitter_username: 
+github_username:  
+
+# Build settings
+markdown: kramdown
+permalink: pretty
