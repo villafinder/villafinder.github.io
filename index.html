@@ -1,23 +1,30 @@
 ---
 layout: default
+css: index
 ---
 <div class="wrap">
 
-    <div class="jumbotron">
-        <h1> <a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-        <h2>Leading villa distribution solution in Asia</h2>
+    <div class="jumbotron" style="height:600px; background-image: url('https://d1b870donzvykt.cloudfront.net/home/image-17.jpg');">
+        <div class="box">
+            <a href="{{ site.baseurl }}/"><img src="{{base.url}}/assets/images/logo.png" alt="Villa-Finder.com" width="400px"></a>
+            <div class="title" style="margin-top:20px;" class="title">Leading villa distribution solution in Asia</div>
+        </div>
+
     </div>
 
 
-    <nav class="navbar navbar-default" role="navigation">
-        <ul class="nav navbar-nav">
-            <li><a href="{{ site.baseurl }}/about-us/overview">About us</a></li>
-            <li><a href="{{ site.baseurl }}/brands/villabalicom">Brands</a></li>
-            <li><a href="{{ site.baseurl }}/press/news">Press</a></li>
-            <li><a href="{{ site.baseurl }}/jobs">Jobs</a></li>
-            <li><a href="{{ site.baseurl }}/contact-us">Contact us</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+            <ul class="nav nav-justified">
+                <li class="active"><a href="{{ site.baseurl }}/">Home</a></li>
+                <li><a href="{{ site.baseurl }}/about-us/overview">About us</a></li>
+                <li><a href="{{ site.baseurl }}/brands/villabalicom">Brands</a></li>
+                <li><a href="{{ site.baseurl }}/press/news">Press</a></li>
+                <li><a href="{{ site.baseurl }}/jobs">Jobs</a></li>
+                <li><a href="{{ site.baseurl }}/contact-us">Contact us</a></li>
+            </ul>
+        </nav>
+    </div>
 
 
     <div class="container">
@@ -107,7 +114,11 @@ layout: default
 
     </div>
 
+    <div class="push"></div>
+
 </div>
+
+{% include footer.html %}d
 
 
 
