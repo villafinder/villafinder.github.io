@@ -7,7 +7,9 @@ html {
 }
 
 body{
-    font-family: 'Lato', sans-serif;
+    //font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     font-size: 15px; 
     color:$color5;
     height:100%;
@@ -16,12 +18,12 @@ body{
 
 .wrap{
     min-height: 100%;
-    margin-bottom: -45px; 
+    margin-bottom: -55px; 
     height: auto !important;
 }
 
 .push{
-    height: 45px; 
+    height: 55px; 
 }
 
 h1, h2, h3, h4, h5, p {
@@ -51,6 +53,7 @@ ul {
 }
 
 h1{
+    font-family: 'Oswald', sans-serif;
     margin-bottom:20px; 
     font-size: 24px;
 }
@@ -58,6 +61,11 @@ h1{
 h2{
     margin-bottom:10px; 
     font-size: 20px;
+    font-weight: 400;
+}
+
+label{
+    font-weight: 400;
 }
 
 h3{
@@ -96,6 +104,8 @@ p{
 .title {
     font-size: 30px;
     color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+    font-weight: 400;
 }
 
 //Nav1
@@ -109,12 +119,7 @@ p{
 }
 
 .nav>li>a{
-    color: $color5;
     background-color: transparent;
-}
-
-nav>li>a:hover{
-    color: $color1;
 }
 
 .nav>li.active>a{
@@ -139,11 +144,19 @@ nav>li>a:hover{
 }
 
 
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
+    color: $color1;
+    text-decoration: none;
+    background-color: transparent;
+    outline: 0;
+}
+
+
 //footer
 .footer, .wrap:after {
     border-top: 2px solid $color5;
-    min-height:45px; 
-    line-height:45px; 
+    min-height:55px; 
+    line-height:55px; 
 }
 
 .footer_links{
@@ -173,12 +186,9 @@ ul.social li{
 
 //panel
 .panel-default{
-    background-color:$color3;
-    border-color: transparent;
-}
-
-.panel-primary{
-    border-color:$color4; 
+    box-shadow:none; 
+    border:0;
+    border-bottom: 4px solid $color3;
 }
 
 
