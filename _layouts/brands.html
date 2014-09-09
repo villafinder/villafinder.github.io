@@ -1,0 +1,42 @@
+---
+layout: page
+---
+
+<div class="brand_logo"><img src="{{ base.url }}/assets/images/{{ page.logo }}" alt="{{ paga.alt }}" width="200px"></div>
+
+
+<div class="figures row">
+    <div class="col-sm-4">
+        <div class="panel panel-primary">
+            <div class="panel-body">
+                {{ page.key1 }}
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-4">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                {{ page.key2 }}
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-4">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                {{ page.key3 }}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="description">
+   {{content}}
+</div>
+
+<div class="go">
+    <button type="button" class="btn btn-default"><a class="link" href="{{ page.link }}" target="_blank">Go to the site</a></button>
+</div>
+
