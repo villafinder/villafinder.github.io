@@ -1,0 +1,194 @@
+@import "_overall.scss";
+
+//General
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px; 
+    color:$color5;
+    height:100%;
+    width: 100%;
+}
+
+.wrap{
+    min-height: 100%;
+    margin-bottom: -45px; 
+    height: auto !important;
+}
+
+.push{
+    height: 45px; 
+}
+
+h1, h2, h3, h4, h5, p {
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color:$color5; 
+}
+
+a:hover, a:active, a:focus, a.active {
+    text-decoration: none;
+    color: $color1;
+}
+
+.link{
+    color:white;
+}
+
+.link:hover{
+    color:white;
+}
+
+ul {
+    margin: 0;
+}
+
+h1{
+    margin-bottom:20px; 
+    font-size: 24px;
+}
+
+h2{
+    margin-bottom:10px; 
+    font-size: 20px;
+}
+
+h3{
+    font-size: 16px;
+}
+
+p{
+    font-size: 15px; 
+    line-height: 25px; 
+    margin-bottom: 10px; 
+}
+
+//Image header
+.jumbotron{
+    margin :0;
+    padding:0;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:200px; 
+    line-height: 150px; 
+    text-align:center;
+}
+
+.main_title {
+    vertical-align:middle;
+    display:inline-block;
+    line-height:normal; 
+    text-align:center;
+}
+
+.title {
+    font-size: 30px;
+    color: #fff;
+}
+
+//Nav1
+.navbar {
+    min-height: 10px; 
+    top:-20px;
+}
+
+.navbar-default {
+    background-color: $color3;
+}
+
+.nav>li>a{
+    color: $color5;
+    background-color: transparent;
+}
+
+nav>li>a:hover{
+    color: $color1;
+}
+
+.nav>li.active>a{
+    color: $color1;
+}
+
+
+//Nav2
+.nav-pills>li>a {
+    color: inherit;
+    background-color: transparent;
+}
+
+.nav-pills>li>a:hover, .nav-pills>li.active>a:hover {
+    color: $color1;
+    background-color: transparent;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus {
+    color: $color1;
+    background-color: transparent;
+}
+
+
+//footer
+.footer, .wrap:after {
+    border-top: 2px solid $color5;
+    min-height:45px; 
+    line-height:45px; 
+}
+
+.footer_links{
+    text-align: center; 
+    list-style-type: none;
+}
+
+ul.footer_links li{
+    display: inline; 
+    padding: 0 2%;
+}
+
+ul.social{
+    text-align: center; 
+    list-style-type: none;
+}
+
+ul.social li{
+    font-size: 25px; 
+    display: inline; 
+    padding: 0 2%;
+}
+
+.copyright{
+    text-align:center;
+}
+
+//panel
+.panel-default{
+    background-color:$color3;
+    border-color: transparent;
+}
+
+.panel-primary{
+    border-color:$color4; 
+}
+
+
+//button
+.btn-default{
+    background-color: $color1;
+    color:white; 
+}
+.btn-default:hover, .btn-default:active{
+    background-color: $color2;
+    color:$color3; 
+}
+

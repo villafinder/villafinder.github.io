@@ -9,7 +9,7 @@ css : contact
 ---
 
 <div class="row">
-    <div class="col-lg-12 title">
+    <div class="col-lg-12 title_contact">
         <h2>If you have questions, suggestions, ideas, we would love to hear from you !</h2> 
         <h2> For immediate assistance give us a call, or complete the form below to connect with the appropriate member of our team.</h2>
     </div>
@@ -31,17 +31,17 @@ css : contact
         <form role="form" action="http://forms.brace.io/maximehrbt@gmail.com" id="contactForm" method="post">
             <div class="form-group">
                 <label for="InputName">Name</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" name="name" placeholder="Enter name">
+                <input type="text" class="form-control" id="exampleInputEmail1" name="name" placeholder="Enter name" required="required">
             </div>        
 
             <div class="form-group">
                 <label for="InputEmail">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1"  name="_replyto" placeholder="Enter email">
+                <input type="email" class="form-control" id="exampleInputEmail1"  name="email" placeholder="Enter email" required="required">
             </div>
 
             <div class="form-group">
                 <label for="InputArea">Your message</label>
-                <textarea class="form-control" id="InputArea" rows="3" name="message"></textarea>
+                <textarea class="form-control" id="InputArea" rows="3" name="message" required="required"></textarea>
             </div>
 
             <div class="checkbox">
@@ -50,7 +50,7 @@ css : contact
                 </label>
             </div>
 
-            <button type="submit" class="btn btn-default">Send your message</button>
+            <button type="submit" class="btn btn-default"><i class="fa fa-envelope-o"></i>  Send your message</button>
         </form>
     </div>
 

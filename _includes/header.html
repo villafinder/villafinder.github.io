@@ -1,7 +1,8 @@
 
-<div class="jumbotron" style="height:200px; background-image: url('{% if page.image %}{{ page.image }}{% else %}https://d1b870donzvykt.cloudfront.net/home/image-10.jpg{% endif %}');">
-    <div class="logo">
+<div class="jumbotron" style="background-image: url('{% if page.image %}{{ page.image }}{% else %}https://d1b870donzvykt.cloudfront.net/home/image-10.jpg{% endif %}');">
+    <div class="main_title">
         <a href="{{ site.baseurl }}/"><img src="{{base.url}}/assets/images/logo.png" alt="Villa-Finder.com" width="300px"></a>
+        <div class="title">Leading villa distribution solution in Asia</div>
     </div>
 </div>
 
@@ -9,7 +10,7 @@
 <div class="container">
     <nav class="navbar navbar-default" role="navigation">
         <ul class="nav nav-justified">
-            <li><a href="{{ site.baseurl }}/">Home</a></li>
+            <li><a class="{% if page.category == 'index' %}active{% endif %}" href="{{ site.baseurl }}/"><img src="{{base.url}}/assets/images/logo.png" alt="Villa-Finder.com" width="150px"></a></li>
             <li class="{% if page.category == 'about-us' %}active{% endif %}"><a href="{{ site.baseurl }}/about-us/overview">About us</a></li>
             <li class="{% if page.category == 'brands' %}active{% endif %}"><a href="{{ site.baseurl }}/brands/villabalicom">Brands</a></li>
             <li class="{% if page.category == 'press' %}active{% endif %}"><a href="{{ site.baseurl }}/press/news">Press</a></li>
