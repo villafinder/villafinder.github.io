@@ -4,14 +4,15 @@
     text-align:right;
 }
 
-.link{
-    color:white;
+.strong{
+    color:$color1;
 }
 
-.link:hover{
-    color:white;
+.strong:hover{
+    color:$color2;
 }
 
 .box_text{
     min-height: 130px; 
 }
+

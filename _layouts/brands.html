@@ -2,14 +2,22 @@
 layout: page
 ---
 
-<div class="brand_logo"><img src="{{ base.url }}/assets/images/{{ page.logo }}" alt="{{ paga.alt }}" width="200px"></div>
+<div class="row brand_header">
+    <div class="col-xs-6">
+        <img src="{{ base.url }}/assets/images/{{ page.logo }}" alt="{{ page.alt }}" width="200px">
+    </div>
+
+    <div class="col-xs-6 go">
+        <button type="button" class="btn btn-default"><a class="link" href="{{ page.link }}" target="_blank">Go to the site</a></button>
+    </div>
+</div>
 
 
 <div class="figures row">
     <div class="col-sm-4">
         <div class="panel panel-default">
             <div class="panel-body">
-                {{ page.key1 }}
+                {% if page.b2 == "c" %}<i class="fa fa-home icons"></i> {% endif %}{{ page.key1 }}
             </div>
         </div>
     </div>
@@ -17,7 +25,7 @@ layout: page
     <div class="col-sm-4">
         <div class="panel panel-default">
             <div class="panel-body">
-                {{ page.key2 }}
+                {% if page.b2 == "c" %}<i class="fa fa-key icons"></i> {% endif %}{{ page.key2 }}
             </div>
         </div>
     </div>
@@ -25,18 +33,33 @@ layout: page
     <div class="col-sm-4">
         <div class="panel panel-default">
             <div class="panel-body">
-                {{ page.key3 }}
+                {% if page.b2 == "c" %}<i class="fa fa-users icons"></i> {% endif %}{{ page.key3 }}
             </div>
         </div>
     </div>
 </div>
-
 
 <div class="description">
-   {{content}}
+    {{content}}
 </div>
 
-<div class="go">
-    <button type="button" class="btn btn-default"><a class="link" href="{{ page.link }}" target="_blank">Go to the site</a></button>
+<div class="computer">
+    <div class="screen">
+        <a href="{{ page.link }}" target="_blank">
+            <img src="{{base.url}}/assets/images/screen_shot_{{ page.screen }}.png" alt="{{ page.alt }} screen-shot" class='screen_image'>  
+        </a>
+    </div>
+    <div class="on"><i class="fa fa-circle"></i></div> 
+    <div class="base hidden-xs"></div>
+    <div class="footer-top hidden-xs"></div>
+    <div class="footer-bottom hidden-xs"></div>
 </div>
+
+
+
+
+
+
+
+
 

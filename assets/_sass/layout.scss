@@ -7,8 +7,7 @@ html {
 }
 
 body{
-    //font-family: 'Lato', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    font-family: $police1;
     font-weight: 300;
     font-size: 15px; 
     color:$color5;
@@ -20,6 +19,10 @@ body{
     min-height: 100%;
     margin-bottom: -55px; 
     height: auto !important;
+}
+
+.main_container{
+    margin-bottom:30px; 
 }
 
 .push{
@@ -53,7 +56,7 @@ ul {
 }
 
 h1{
-    font-family: 'Oswald', sans-serif;
+    font-family: $police2;
     margin-bottom:20px; 
     font-size: 24px;
 }
@@ -64,12 +67,14 @@ h2{
     font-weight: 400;
 }
 
-label{
-    font-weight: 400;
+h3{
+    font-size:16px; 
+    color: $color1; 
+    text-transform: uppercase;
 }
 
-h3{
-    font-size: 16px;
+label{
+    font-weight: 400;
 }
 
 p{
@@ -112,6 +117,7 @@ p{
 .navbar {
     min-height: 10px; 
     top:-20px;
+    margin-bottom:40px;
 }
 
 .navbar-default {
@@ -191,6 +197,14 @@ ul.social li{
     border-bottom: 4px solid $color3;
 }
 
+.panel-primary{
+    background-color: $color3;
+    border:0; 
+    //border-bottom: 4px solid $color4;
+    margin-bottom:30px; 
+    // border-right: 4px solid $color4;
+}
+
 
 //button
 .btn-default{
@@ -201,4 +215,13 @@ ul.social li{
     background-color: $color2;
     color:$color3; 
 }
+
+//others
+.icons{
+    margin-right:10px; 
+    color:$color1; 
+    font-size:16px; 
+}
+
+//nav ubuntu
 
