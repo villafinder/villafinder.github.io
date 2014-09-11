@@ -29,12 +29,25 @@
     margin-bottom:40px; 
 }
 
-.brands{
+.brand{
     text-align:center;  
 }
 
+.panel-primary{
+    text-align:center; 
+    vertical-align:middle;
+    height:60px;
+    line-height:60px;
+}
+
+.panel-body {
+    padding: 0;
+}
+
 .brand_image{
-    margin-bottom:30px;
-    width: 150px;
+    vertical-align:middle;
+    display:inline-block;
+    line-height:normal; 
+    width: 60%;
 }
 

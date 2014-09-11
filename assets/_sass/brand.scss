@@ -47,12 +47,6 @@
     width:100%;
 }
 
-.screen:hover{
-    .screen_image{
-        opacity:0.7;
-    }
-}
-
 .on{
     text-align:center;
     color: white;
@@ -61,6 +55,18 @@
     bottom: 19px;
     position: relative;
 }
+
+.screen:hover{
+    .screen_image{
+        opacity:0.7;
+    }
+
+    .on{
+        color: $color1;
+    } 
+}
+
+
 
 .computer-footer{
     text-align:center; 

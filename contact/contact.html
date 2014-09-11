@@ -6,10 +6,8 @@ type :
 description : ...
 permalink: /contact-us/
 css : contact
+image : header_china.jpg
 ---
-
-
-
 
 <div class="row show">
     <div class="col-lg-12 title_contact">
@@ -21,13 +19,17 @@ css : contact
 
 <div class="row show">
 
-    <div class="col-sm-6 box_call">
-        <div class="center">
-            <img class="image_call" src="{{base.url}}/assets/images/logo.png" alt="Villa-Finder.com" width="200px">
-            <p>+33 (0)3 20 32 43 55</p>
-            <p>+33 (0)3 20 32 43 55</p>
+    <div class="col-sm-6 box_call" itemscope itemtype="http://schema.org/Organization">
+        <div class="center" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <address >
+                <strong><span itemprop="name">Villa-Finder.com</strong><br>
+                <span itemprop="streetAddress">55a Pagoda Street</span><br>
+                <span itemprop="addressLocality">Singapore 059214</span><br>
+                <span itemprop="telephone"><abbr title="Phone">P:</abbr> +65 6871 8993</span>
+            </address>
         </div>
     </div>
+
 
 
     <div class="col-sm-6">
@@ -53,6 +55,8 @@ css : contact
             </div>
         </form>
     </div>
+    
+    
 
 </div>
 

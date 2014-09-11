@@ -17,7 +17,7 @@ layout: page
     <div class="col-sm-4">
         <div class="panel panel-default">
             <div class="panel-body">
-                {% if page.b2 == "c" %}<i class="fa fa-home icons"></i> {% endif %}{{ page.key1 }}
+                <i class="fa fa-{{ page.icon1}} icons"></i> {{ page.key1 }}
             </div>
         </div>
     </div>
@@ -25,7 +25,7 @@ layout: page
     <div class="col-sm-4">
         <div class="panel panel-default">
             <div class="panel-body">
-                {% if page.b2 == "c" %}<i class="fa fa-key icons"></i> {% endif %}{{ page.key2 }}
+                <i class="fa fa-{{ page.icon2}} icons"></i> {{ page.key2 }}
             </div>
         </div>
     </div>
@@ -33,7 +33,7 @@ layout: page
     <div class="col-sm-4">
         <div class="panel panel-default">
             <div class="panel-body">
-                {% if page.b2 == "c" %}<i class="fa fa-users icons"></i> {% endif %}{{ page.key3 }}
+                <i class="fa fa-{{ page.icon3}} icons"></i> {{ page.key3 }}
             </div>
         </div>
     </div>
@@ -46,7 +46,7 @@ layout: page
 <div class="computer">
     <div class="screen">
         <a href="{{ page.link }}" target="_blank">
-            <img src="{{base.url}}/assets/images/screen_shot_{{ page.screen }}.png" alt="{{ page.alt }} screen-shot" class='screen_image'>  
+            <img src="{{base.url}}/assets/images/screen_shot{{ page.screen }}.jpg" alt="{{ page.alt }} screen-shot" class='screen_image'>  
         </a>
     </div>
     <div class="on"><i class="fa fa-circle"></i></div> 

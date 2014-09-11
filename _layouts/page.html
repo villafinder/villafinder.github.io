@@ -24,9 +24,9 @@ layout: default
         {% endif %}
 
 
-        <div class="jumbotron" style="background-image: url('{% if page.image %}{{ page.image }}{% else %}https://d1b870donzvykt.cloudfront.net/home/image-10.jpg{% endif %}');">
+        <div class="jumbotron" style="background-image: url({% if page.image %}{{base.url}}/assets/images/{{ page.image }}{% else %}https://d1b870donzvykt.cloudfront.net/home/image-10.jpg{% endif %});">
             <div class="main_title">
-                <a href="{{ site.baseurl }}/"><img src="{{base.url}}/assets/images/logo.png" alt="Villa-Finder.com" width="300px"></a>
+                <a href="{{ site.baseurl }}/"><img src="{{base.url}}/assets/images/logo_white.png" alt="Villa-Finder.com" width="300px"></a>
                 <div class="title">Leading villa distribution solution in Asia</div>
             </div>
         </div>
