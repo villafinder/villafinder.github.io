@@ -151,12 +151,22 @@ p{
 }
 
 
+//nav phone
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
     color: $color1;
     text-decoration: none;
     background-color: transparent;
     outline: 0;
 }
+
+.margin_nav{
+    margin-bottom:30px; 
+}
+
+.navbar-toggle .icon-bar {
+    background-color: $color5;
+}
+
 
 
 //footer
