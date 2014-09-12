@@ -114,6 +114,14 @@ p{
     font-weight: 400;
 }
 
+.legend{
+    text-align:right; 
+    top: -41px;
+    position: relative;
+    margin-right: 20px;
+    color: white;
+}
+
 //Nav1
 .navbar {
     min-height: 10px; 
@@ -221,11 +229,17 @@ ul.social li{
 .btn-default{
     background-color: $color1;
     color:white; 
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
 }
 .btn-default:hover, .btn-default:active{
     background-color: $color2;
     color:$color3; 
 }
+
 
 //others
 .icons{
