@@ -11,9 +11,46 @@
 
 .text_claim{
     min-height: 50px; 
-
 }
 
-.panel-primary{
-    min-height:200px; 
+.offers{
+    margin-top:20px;
+}
+
+.panel-body{
+    text-align:center; 
+}
+
+h2 small{
+    font-size:80%; 
+    color:$color4; 
+}
+
+.more{
+    text-align:right; 
+}
+
+@media (min-width: 768px){
+    .description{
+        min-height: 102px;
+        max-height: 102px;
+        overflow:hidden; 
+    }
+    .claim{
+        margin-bottom:20px; 
+    }
+}
+
+@media (max-width: 768px){
+    .claim{
+        margin-bottom:10px; 
+    }
+}
+
+@media (min-width: 1200px){
+    .description{
+        min-height: 75px;
+        max-height: 75px;
+        overflow:hidden; 
+    }
 }
