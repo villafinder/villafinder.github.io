@@ -7,12 +7,13 @@ permalink: sitemap.xml/
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     {% for page in site.pages %}
-   
+    {% if page.priority %}
     <url>
-        <loc>{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
+        <loc>http://www.villa-finder.com{{ page.url }}</loc>
         <changefreq>monthly</changefreq>
         <priority>{{ page.priority }}</priority>
     </url>
+    {% endif %}
    
     {% endfor %}
 </urlset>
