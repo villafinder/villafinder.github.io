@@ -1,11 +1,8 @@
 # Site settings
 title: Villa-Finder.com
-email: your-email@domain.com
-description: ""
+description: "Leading villa distribution solution in Asia"
 baseurl: ""
-url: "http://yourdomain.com"
-twitter_username: 
-github_username:  
+url: "http://www.villa-finder.com/"
     
 # Build settings
 permalink: pretty
