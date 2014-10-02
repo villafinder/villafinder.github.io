@@ -10,3 +10,15 @@
     text-align:center;
     margin-bottom:15px; 
 }
+
+@media (min-width: 970px){
+    h2{
+        min-height: 66px;
+    }
+}
+
+@media (min-width: 1170px){
+    .panel-primary {
+        min-height: 270px;
+    }
+}
