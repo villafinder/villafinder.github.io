@@ -60,8 +60,8 @@ var source = getUrlParameter('utm_source');
 var medium = getUrlParameter('utm_medium');
 var campaign = getUrlParameter('utm_campaign');
 
-var new_source = source ? "utm_source="+source+"VF" : "utm_source=VF";
-var new_medium = medium ? "&utm_source="+medium : "";
+var new_source = source ? "utm_source="+source+"/VF" : "utm_source=VF";
+var new_medium = medium ? "&utm_medium="+medium : "utm_medium=referral";
 var new_campaign = campaign ? "&utm_campaign="+campaign : "";
 
 var parms = "?"+new_source+new_medium+new_campaign;
