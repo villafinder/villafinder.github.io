@@ -1,1 +1,66 @@
-html{width:100%;height:100%}body{font-family:"Roboto",sans-serif;font-weight:300;font-size:15px;color:#1d1d1d;height:100%;width:100%}.wrap{min-height:100%;margin-bottom:-55px;height:auto !important}.main_container{margin-bottom:30px}.push{height:55px}h1,h2,h3,h4,h5,p{padding:0;margin:0}a{color:#1d1d1d}a:hover,a:active,a:focus,a.active{text-decoration:none;color:#bd1343}.link{color:white}.link:hover{color:white}ul{margin:0}h1{font-family:"Bree Serif",serif;margin-bottom:20px;font-size:24px}h2{margin-bottom:10px;font-size:20px;font-weight:400}h3{font-size:16px;color:#bd1343;text-transform:uppercase}label{font-weight:400}p{font-size:15px;line-height:25px;margin-bottom:10px}.jumbotron{margin:0;padding:0;background-repeat:no-repeat;background-attachment:scroll;background-position:center center;webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;height:200px;line-height:150px;text-align:center}.main_title{vertical-align:middle;display:inline-block;line-height:normal;text-align:center}.title{margin-top:10px;font-size:30px;color:#fff;text-shadow:1px 1px 4px #000;font-weight:400}.legend{text-align:right;top:-41px;position:relative;margin-right:20px;color:white}.navbar{min-height:10px;top:-20px;margin-bottom:40px}.navbar-default{background-color:#fafafa}.nav>li>a{background-color:transparent}.nav>li.active>a{color:#bd1343}.nav-pills>li>a{color:inherit;background-color:transparent}.nav-pills>li>a:hover,.nav-pills>li.active>a:hover{color:#bd1343;background-color:transparent}.nav-pills>li.active>a,.nav-pills>li.active>a:focus{color:#bd1343;background-color:transparent}.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus{color:#bd1343;text-decoration:none;background-color:transparent;outline:0}.margin_nav{margin-bottom:30px}.navbar-toggle .icon-bar{background-color:#1d1d1d}.footer,.wrap:after{border-top:2px solid #1d1d1d;min-height:55px;line-height:55px}.footer_links{text-align:center;list-style-type:none}ul.footer_links li{display:inline;padding:0 2%}ul.social{text-align:center;list-style-type:none}ul.social li{font-size:25px;display:inline;padding:0 2%}.copyright{text-align:center}.panel-default{box-shadow:none;border:0;border-bottom:4px solid #fafafa}.panel-primary{background-color:#fafafa;border:0;margin-bottom:30px}.btn-default{background-color:#bd1343;color:white;-webkit-transition:all 500ms ease;-moz-transition:all 500ms ease;-ms-transition:all 500ms ease;-o-transition:all 500ms ease;transition:all 500ms ease}.btn-default:hover,.btn-default:active{background-color:#ff336d;color:#fafafa}.icons{margin-right:10px;color:#bd1343;font-size:16px}
+/*
+Syntax error: File to import not found or unreadable: _overall.scss.
+              Load paths:
+                Compass::SpriteImporter
+                /home/maxime/Sites/villafinder.github.io/assets/_sass
+                /usr/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets
+        on line 1 of /home/maxime/Sites/villafinder.github.io/assets/_sass/layout.scss
+
+1: @import "_overall.scss";
+2: 
+3: //General
+4: html {
+5:     width: 100%;
+6:     height: 100%;
+
+Backtrace:
+/home/maxime/Sites/villafinder.github.io/assets/_sass/layout.scss:1
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/import_node.rb:66:in `rescue in import'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/import_node.rb:45:in `import'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/import_node.rb:28:in `imported_file'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/import_node.rb:37:in `css_import?'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:283:in `visit_import'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:151:in `visit'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/root_node.rb:20:in `render'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/engine.rb:274:in `render'
+/usr/lib/ruby/gems/1.9.1/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+/usr/lib/ruby/gems/1.9.1/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/usr/lib/ruby/gems/1.9.1/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:214:in `block in update_stylesheets'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:208:in `each'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:208:in `update_stylesheets'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:291:in `watch'
+/usr/lib/ruby/gems/1.9.1/gems/compass-1.0.1/lib/compass/sass_compiler.rb:46:in `watch!'
+/usr/lib/ruby/gems/1.9.1/gems/compass-1.0.1/lib/compass/commands/watch_project.rb:41:in `perform'
+/usr/lib/ruby/gems/1.9.1/gems/compass-1.0.1/lib/compass/commands/base.rb:18:in `execute'
+/usr/lib/ruby/gems/1.9.1/gems/compass-1.0.1/lib/compass/commands/project_base.rb:19:in `execute'
+/usr/lib/ruby/gems/1.9.1/gems/compass-1.0.1/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/usr/lib/ruby/gems/1.9.1/gems/compass-1.0.1/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/usr/lib/ruby/gems/1.9.1/gems/compass-1.0.1/bin/compass:30:in `block in <top (required)>'
+/usr/lib/ruby/gems/1.9.1/gems/compass-1.0.1/bin/compass:44:in `call'
+/usr/lib/ruby/gems/1.9.1/gems/compass-1.0.1/bin/compass:44:in `<top (required)>'
+/usr/bin/compass:23:in `load'
+/usr/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: _overall.scss.\A               Load paths:\A                 Compass::SpriteImporter\A                 /home/maxime/Sites/villafinder.github.io/assets/_sass\A                 /usr/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets\A         on line 1 of /home/maxime/Sites/villafinder.github.io/assets/_sass/layout.scss\A \A 1: @import \"_overall.scss\";\A 2: \A 3: //General\A 4: html {\A 5:     width: 100%;\A 6:     height: 100%;"; }
