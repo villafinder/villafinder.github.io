@@ -1,0 +1,113 @@
+{% extends "::base.html.twig" %}
+{% block body %}
+    <form class="form-inline" role="form" action="{{ path('support_checkin') }}" method="GET">
+        <div class="form-group">
+            <input type="text" class="form-control" id="from" placeholder="From" name="from" value="{{ from|date('Y-m-d') }}">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="to" placeholder="To" name="to" value="{{ to|date('Y-m-d') }}">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Confirmations</h3>
+        </div>
+        <table class="table table-condensed">
+            <tr>
+                <th>Reference</th>
+                <th>Name</th>
+                <th>Language</th>
+                <th>Villas</th>
+                <th>Check in</th>
+                <th>Check out</th>
+                <th>IN expected</th>
+                <th>IN received</th>
+                <th>Payment</th>
+                <th>OUT</th>
+                <th>Margin</th>
+                <th>Arrival</th>
+                <th>Wel.</th>
+                <th>+</th>
+            </tr>
+            {% for folder in folders %}
+                <tr>
+                    <td><a href="{{ path('folder_show', {'reference': folder.reference}) }}">{{ folder.reference }}</a></td>
+                    <td>{{ folder.client.name }}</td>
+                    <td>{{ folder.client.locale }}</td>
+                    <td>{{ folder.defaultinquiry.villanames|join('<br>')|raw }}</td>
+                    <td>{{ folder.defaultinquiry.totalcheckin|date('d/m/Y') }}</td>
+                    <td>{{ folder.defaultinquiry.totalcheckout|date('d/m/Y') }}</td>
+                    <td>{{ folder.totalinexpected }}</td>
+                    <td>{{ folder.totalinreceived }}</td>
+                    <td>{% if folder.totalinexpected != 0 %} {% if (folder.totalinreceived/folder.totalinexpected)==1 %}<span class="label label-success">{{ (100*(folder.totalinreceived/folder.totalinexpected))|round }}%</span>{% else %}<span class="label label-danger">{{ (100*(folder.totalinreceived/folder.totalinexpected))|round }}%</span>{% endif %}{% endif %}</td>
+                    <td>{{ folder.totaloutsent }}</td>
+                    <td>{{ 100 - (100 * folder.totaloutdue / folder.defaultinquiry.totalprice)|round }} %</td>
+                    <td>
+                        {% if folder.arrivalfinished %}
+                            <span class="label label-success">Done</span>
+                        {% elseif folder.arrivalinprogress %}
+                            <span class="label label-warning">{{ folder.arrivalguests }} / {{ folder.defaultinquiry.guests }}</span>
+                        {% else %}
+                            <span class="label label-danger">To do</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if folder.welcomemessagesentat %}
+                            <span class="label label-success">Sent</span>
+                        {% else %}
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-danger btn-xs dropdown-toggle" data-toggle="dropdown">
+                                    <span class="glyphicon glyphicon-send"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="{{ path('folder_mails_welcome_edit', {'id': folder.id, 'lang': 'en'}) }}">EN</a></li>
+                                    <li><a href="{{ path('folder_mails_welcome_edit', {'id': folder.id, 'lang': 'fr'}) }}">FR</a></li>
+                                </ul>
+                            </div>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% set allValidated = true %}
+                        {% for demand in folder.demands %}
+                            {% if demand.validatedAt is null and demand.canceledAt is null %}
+                                {% set allValidated = false %}    
+                            {% endif %}
+                        {% endfor %}
+                        {% if allValidated == false %}
+                            <span class="label label-danger">to do</span>  
+                        {% else %}
+                            <span class="label label-success">Done</span>
+                        {% endif %}
+                    </td>
+
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script>
+        $(function() {
+            $("#from").datepicker({
+                defaultDate: "-1w",
+                dateFormat: 'yy-mm-dd',
+                changeMonth: false,
+                numberOfMonths: 1,
+                onClose: function(selectedDate) {
+                    $("#to").datepicker("option", "minDate", selectedDate);
+                }
+            });
+            $("#to").datepicker({
+                defaultDate: "-1w",
+                dateFormat: 'yy-mm-dd',
+                changeMonth: false,
+                numberOfMonths: 3,
+                onClose: function(selectedDate) {
+                    $("#from").datepicker("option", "maxDate", selectedDate);
+                }
+            });
+        });
+    </script>
+{% endblock javascripts %}

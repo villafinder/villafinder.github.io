@@ -43,7 +43,7 @@ layout: default
                     <li class="{% if page.category == 'jobs' %}active{% endif %}"><a href="{{ site.baseurl }}/jobs">Jobs</a></li>
                     <li class="{% if page.category == 'contact-us' %}active{% endif %}"><a href="{{ site.baseurl }}/contact-us">Contact us</a></li>
                 </ul>
-            </nav><div class="legend">Test legend</div>
+            </nav>
 
             <div class="row">
                 {% if links %}
@@ -52,7 +52,7 @@ layout: default
                         {% for link in links %}
                         <li class="{% if link == page.type %}active{% endif %}"><a href="{{ site.baseurl }}/{{ page.category }}/{{ link }}">{{ names[forloop.index0] }}</a></li>
                         {% endfor %}
-                    </ul>  
+                    </ul>
                 </div>
                 <div class="col-sm-10">
                     {{ content }}
