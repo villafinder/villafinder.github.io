@@ -30,6 +30,18 @@
           <div class="row row2">WORST</div>
           <div class="row row3">department</div>
       </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script type="text/javascript">
+      var t = function(){
+        setTimeout(function(){
+            $('.label').css('color', 'rgb('+getRandomInt(0,255)+','+getRandomInt(0,255)+','+getRandomInt(0,255)+')')
+            t();
+        },100)
+      }
+      function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+      }
+      </script>
     </body>
 
 </html>
