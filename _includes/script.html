@@ -1,74 +1,80 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
+<script type="text/javascript">
+    $(window).load(function(){
+        $('.modal').modal('show');
+    });
+</script>
+
 {% if page.category == "contact-us" %}
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.1/js/bootstrapValidator.min.js"></script>
 
 <script>
-$(document).ready(function() {
-  $('#contactForm').bootstrapValidator({
-    message: 'This value is not valid',
-    feedbackIcons: {
-    },
-    fields: {
-      name: {
-        message: 'The username is not valid',
-        validators: {
-          notEmpty: {
-            message: 'The username is required and cannot be empty'
-          },
-        }
-      },
-      email: {
-        validators: {
-          notEmpty: {
-            message: 'The email is required and cannot be empty'
-          },
-          emailAddress: {
-            message: 'The input is not a valid email address'
-          }
-        }
-      },
-      message: {
-        validators: {
-          notEmpty: {
-            message: "You can't send an empty message"
-          },
-        }
-      }
+    $(document).ready(function() {
+        $('#contactForm').bootstrapValidator({
+            message: 'This value is not valid',
+            feedbackIcons: {
+            },
+            fields: {
+                name: {
+                    message: 'The username is not valid',
+                    validators: {
+                        notEmpty: {
+                            message: 'The username is required and cannot be empty'
+                        },
+                    }
+                },
+                email: {
+                    validators: {
+                        notEmpty: {
+                            message: 'The email is required and cannot be empty'
+                        },
+                        emailAddress: {
+                            message: 'The input is not a valid email address'
+                        }
+                    }
+                },
+                message: {
+                    validators: {
+                        notEmpty: {
+                            message: "You can't send an empty message"
+                        },
+                    }
+                }
 
-    }
-  });
+            }
+        });
 });
 </script>
 {% endif %}
 
 {% if page.category == "land" %}
 <script>
-function getUrlParameter(sParam){
-  var sPageURL = window.location.search.substring(1);
-  var sURLVariables = sPageURL.split('&');
-  for (var i = 0; i < sURLVariables.length; i++){
-    var sParameterName = sURLVariables[i].split('=');
-    if (sParameterName[0] == sParam){
-      return sParameterName[1];
+    function getUrlParameter(sParam){
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&');
+        for (var i = 0; i < sURLVariables.length; i++){
+            var sParameterName = sURLVariables[i].split('=');
+            if (sParameterName[0] == sParam){
+                return sParameterName[1];
+            }
+        }
     }
-  }
-}
 
-var source = getUrlParameter('utm_source');
-var medium = getUrlParameter('utm_medium');
-var campaign = getUrlParameter('utm_campaign');
+    var source = getUrlParameter('utm_source');
+    var medium = getUrlParameter('utm_medium');
+    var campaign = getUrlParameter('utm_campaign');
 
-var new_source = source ? "utm_source="+source+"/VF" : "utm_source=villa-finder.com/landing";
-var new_medium = medium ? "&utm_medium="+medium : "&utm_medium=referral";
-var new_campaign = campaign ? "&utm_campaign="+campaign : "";
+    var new_source = source ? "utm_source="+source+"/VF" : "utm_source=villa-finder.com/landing";
+    var new_medium = medium ? "&utm_medium="+medium : "&utm_medium=referral";
+    var new_campaign = campaign ? "&utm_campaign="+campaign : "";
 
-var parms = "?"+new_source+new_medium+new_campaign;
+    var parms = "?"+new_source+new_medium+new_campaign;
 
-$(".desti_box").each(function( index ) {
-  var link = $(this).attr('href');
-  $(this).attr('href', link+parms);
-});
+    $(".desti_box").each(function( index ) {
+        var link = $(this).attr('href');
+        $(this).attr('href', link+parms);
+    });
 </script>
 {% endif %}
