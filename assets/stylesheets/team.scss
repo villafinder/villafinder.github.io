@@ -1,4 +1,9 @@
-@import "_overall.scss";
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@import "_overall";
 
 .people{
     margin-bottom: 40px; 
@@ -22,5 +27,4 @@
     h2, h3{
         text-align:center; 
     }
-
 }

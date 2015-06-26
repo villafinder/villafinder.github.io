@@ -1,0 +1,165 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@import "_overall";
+
+.claim{
+    text-align:center; 
+    margin-bottom: 20px; 
+}
+
+.box_picture {
+    background-color:$color3; 
+    height:140px; 
+    width:140px; 
+    border-radius: 50%;
+    line-height:140px; 
+    text-align:center; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:10px; 
+}
+
+.picture {
+    vertical-align:middle;
+    display:inline-block;
+    line-height:normal; 
+    text-align:center;
+    color:$color1;
+    font-size:50px; 
+}
+
+.margin {
+    margin-bottom:40px; 
+}
+
+.brand{
+    text-align:center;  
+}
+
+.panel-primary{
+    text-align:center; 
+    vertical-align:middle;
+    height:60px;
+    line-height:60px;
+}
+
+.panel-primary:hover{
+    border-bottom: 4px solid $color4;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.panel-body {
+    padding: 0;
+}
+
+.brand_image{
+    vertical-align:middle;
+    display:inline-block;
+    line-height:normal; 
+    width: 60%;
+}
+
+@media (min-width: 1280px) {
+    .modal-dialog {
+        width: 1100px;
+    }
+}
+
+.section{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.desti_box{
+    padding: 0 12px 0;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+@media (max-width: 767px){
+    .desti_box{
+        padding-right: 0;
+        padding-left: 0;
+        margin-bottom: 12px;
+    }
+}
+
+.desti_subbox{
+    text-align : justify;
+}
+
+.desti_subbox, .city_description_box:hover{
+    height: 100%;
+}
+
+.city_description_box{
+    position: absolute;
+    top: 0;
+    left: 12px;
+    right: 12px;
+    height: 550px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    z-index: 5;
+}
+
+.city_description_box:hover{
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.city_description_txt{
+    position: absolute;
+    bottom: 0;
+    padding: 12px;
+    color: #fff;
+}
+
+#usps .usp {
+    padding: 10px 20px;
+    max-width: 500px;
+    margin: auto;
+}
+#usps .usp-image {
+    max-width: 100px;
+    margin: auto;
+}
+#usps .usp-title {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+}
+#usps .usp-text {
+    text-align: center;
+    font-size: 12px;
+    line-height: 25px;
+}
+#usps .usp-divider {
+    height: 1px;
+    margin: 20px 25% 10px;
+    background-color: #C7C7C7;
+}
+
+.gocorporate {
+    text-align: center;
+    font-size: 20px;
+}
+
+#landing img {
+    width: 100%;
+}

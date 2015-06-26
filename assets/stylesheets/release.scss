@@ -1,0 +1,22 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@import "_overall";
+
+.more{
+    text-align:right;
+}
+
+.strong{
+    color:$color1;
+}
+
+.strong:hover{
+    color:$color2;
+}
+
+.box_text{
+    min-height: 130px; 
+}

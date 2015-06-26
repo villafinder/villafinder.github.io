@@ -3,6 +3,9 @@ title: Villa-Finder.com
 description: "Leading villa distribution solution in Asia"
 baseurl: ""
 url: "http://www.villa-finder.com/"
-    
+
 # Build settings
 permalink: pretty
+sass:
+    style: compressed
+    sass_dir: assets/_sass
