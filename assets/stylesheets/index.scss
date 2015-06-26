@@ -1,4 +1,9 @@
-@import "_overall.scss";
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@import "_overall";
 
 .claim{
     text-align:center; 
@@ -61,3 +66,8 @@
     width: 60%;
 }
 
+@media (min-width: 1280px) {
+    .modal-dialog {
+        width: 1100px;
+    }
+}

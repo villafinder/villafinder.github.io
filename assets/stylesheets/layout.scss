@@ -1,4 +1,9 @@
-@import "_overall.scss";
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@import "_overall";
 
 //General
 html {
@@ -240,13 +245,9 @@ ul.social li{
     color:$color3; 
 }
 
-
 //others
 .icons{
     margin-right:10px; 
     color:$color1; 
     font-size:16px; 
 }
-
-//nav ubuntu
-

@@ -1,4 +1,9 @@
-@import "_overall.scss";
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@import "_overall";
 
 .panel-body{
     text-align:center;
@@ -25,5 +30,3 @@ ul.benefits li{
     font-size:12px; 
     margin-right: 8px; 
 }
-
-
