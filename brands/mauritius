@@ -1,0 +1,27 @@
+---
+layout: brands
+css: brand
+permalink: brands/mauritiusvillacom/
+
+image : header_samui.jpg
+
+title: Villa-Finder | Samui-Villa.com brand
+description :
+
+category : brands
+type : samuivillacom
+
+
+screen : 5
+alt: Mauritius-Villa.com screenshot
+logo : logo_samui.png
+key1 : 50+ villas
+key2 : 250km of white-sand beach
+key3 : 321 sunny days
+icon1 : home
+icon2 : glass
+icon3 : sun-o
+link : https://www.mauritius-villa.com/?utm_source=villa-finder.com&utm_medium=referral
+
+priority: 0.7
+---
