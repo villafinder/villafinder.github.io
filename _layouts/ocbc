@@ -1,0 +1,114 @@
+---
+layout: default
+---
+
+<div class="wrap">
+
+    <div class="main_container">
+
+
+        <div class="jumbotron" style="background-image: url({% if page.image %}{{base.url}}/assets/images/{{ page.image }}{% else %}https://d1b870donzvykt.cloudfront.net/home/image-10.jpg{% endif %});">
+            <div class="main_title">
+                <a href="{{ site.baseurl }}/"><img src="{{base.url}}/assets/images/logo_white.png" alt="Villa-Finder.com" width="300px"></a>
+            </div>
+        </div>
+
+
+
+        <div class="container hidden-xs">
+
+            <div class="row">
+                {% if links %}
+                <div class="col-sm-2">
+                    <ul class="nav nav-pills nav-stacked">
+                        {% for link in links %}
+                        <li class="{% if link == page.type %}active{% endif %}"><a href="{{ site.baseurl }}/{{ page.category }}/{{ link }}">{{ names[forloop.index0] }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="col-sm-10">
+                    {{ content }}
+                </div>
+
+                {% else %}
+                <div class="col-sm-12">
+                    {{ content }}
+                </div>
+                {% endif %}
+            </div>
+
+        </div>
+
+        <div class="container visible-xs">
+
+            {% assign about-us_links = "overview|history|team" | split: "|" %}
+            {% assign about-us_names = "Overview|History|Team" | split: "|" %}
+
+            {% assign press_links = "news|kit|release" | split: "|" %}
+            {% assign press_names = "In the News|Media Kit|Press releases" | split: "|" %}
+
+            {% assign brands_links = "villabalicom|villaphuketcom|samuivillacom|srilankavillacom|mauritiusvillacom|intervilla" | split: "|" %}
+            {% assign brands_names = "Villa-Bali.com|Villa-Phuket.com|Samui-villa.com|Srilanka-Villa.com|Mauritius-Villa.com|inter-villa" | split: "|" %}
+
+            {% assign about-us_links = "exclusive" | split: "|" %}
+            {% assign about-us_names = "Exclusive villas" | split: "|" %}
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="{{base.url}}/assets/images/logo.png" alt="Villa-Finder.com" width="150px"></a></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About us<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            {% for link in about-us_links %}
+                            <li class="{% if link == page.type %}active{% endif %}"><a href="{{ site.baseurl }}/about-us/{{ link }}">{{ about-us_names[forloop.index0] }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Brands<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            {% for link in brands_links %}
+                            <li class="{% if link == page.type %}active{% endif %}"><a href="{{ site.baseurl }}/brands/{{ link }}">{{ brands_names[forloop.index0] }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Press<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            {% for link in press_links %}
+                            <li class="{% if link == page.type %}active{% endif %}"><a href="{{ site.baseurl }}/press/{{ link }}">{{ press_names[forloop.index0] }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+
+                    <li class="{% if page.category == 'jobs' %}active{% endif %}"><a href="{{ site.baseurl }}/jobs">Jobs</a></li>
+                    <li class="{% if page.category == 'contact-us' %}active{% endif %}"><a href="{{ site.baseurl }}/contact-us">Contact us</a></li>
+                    <li class="{% if page.category == 'portfolio' %}active{% endif %}"><a href="{{ site.baseurl }}/exclusive">Exclusive villas</a></li>
+
+                </ul>
+            </div>
+
+            <div class="margin_nav"></div>
+
+            <div class="col-lg-12">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+
+    <div class="push"></div>
+</div>
+
+{% include footer.html %}
