@@ -1,0 +1,92 @@
+---
+layout: page
+css: overview
+permalink: ocbc/
+
+title: Villa-Finder | OCBC clients offer
+description : 
+
+category : portfolio
+type : overview
+
+image : header_about.jpg
+
+priority: 0.7
+---
+
+<h1>Leading villa distribution solution in Asia</h1>
+
+<div class="figures row">
+    <div class="col-md-4 col-xs-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <i class="fa fa-users icons"></i> 27 employees
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-xs-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <i class="fa fa-map-marker icons"></i> Worldwide network
+            </div>
+        </div>
+    </div>   
+
+    <div class="col-md-4 col-xs-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <i class="fa fa-home icons"></i> <a href="https://distribution.villa-finder.com/">Partner dashboard</a> 
+            </div>
+        </div>
+    </div>
+
+   
+
+</div>
+
+<div class="description">
+
+    <p>Villa-Finder.com proposes to Villa Owners a unique Distribution Solution to maximise the occupancy of their villa. In a highly competitive environment, this turn-key solution is ideal for Villa Owners seeking a hassle-free solution that helps them building-up revenue on the long-run for their property.</p>
+    <p>Villa-Finder.com has developed a real time distribution plateform as well as a network of 1,000+ agencies worldwide to distribute its portfolio of exclusive villas.</p>
+    <p>Villa-Finder.com digital marketing team efficiently handles the creation and management of villa websites, social media outlets, and listings on major Travel Websites for all its exclusive villas.</p>
+</div>
+
+
+<div class="row box_benefits">
+    <div class="col-sm-6">
+        <h1>If you are a villa owner, this solution has many benefits</h1>
+        <div>
+            <ul class='benefits'>
+                <li><i class="fa fa-check list"></i> You don’t need to become a marketing expert to distribute your villa, we have developed this expertise</li>
+                <li><i class="fa fa-check list"></i> You don’t need to spend any time on marketing your villa, we do that for you</li>
+                <li><i class="fa fa-check list"></i> You don’t need to limit your distribution to English speaking clients, we speak 7 languages fluently</li>
+                <li><i class="fa fa-check list"></i> You don’t need to be involved on a day-to-day basis, we work 7days a week, 365 a year</li>
+            </ul>  
+        </div>     
+    </div>
+
+    <div class="col-sm-6">
+        <div>
+            <ul class='benefits'>
+                <li><i class="fa fa-check list"></i> We will give you premium placement on our branded websites</li>
+                <li><i class="fa fa-check list"></i> We’ve developed our own IT environment, tailored for the Villa Rental Business</li>
+                <li><i class="fa fa-check list"></i> A problem at the villa? A last minute Airport transfer to arrange? Our concierge team is here to assist!</li>
+            </ul>  
+        </div>     
+    </div>
+</div>
+<div class="row box_benefits">
+        <div class="col-sm-6">
+        <h1>To access our exclusive portfolio</h1>
+        <div>
+            <ul class='benefits'>
+                <li><i class="fa fa-check list"></i> <a href="http://www.inter-villa.com/public/user/exclusive">Up-to-date availability</a> by inter-villa</li>
+                <li><i class="fa fa-check list"></i> <a href="https://docs.google.com/spreadsheets/d/1DF82u7aZ48WCXSLo8eV8I2zcIrxCXJFTfHtzdoNJaVM/pubhtml?gid=1997005702&single=true">Marketing collaterals</a> (including rates & pictures)</li>
+                <li><i class="fa fa-check list"></i> Please send all your bookings enquiries via email to bookings@villa-finder.com.</li>
+            </ul>  
+        </div>     
+    </div>
+</div>
+    
+</div>
