@@ -95,9 +95,7 @@ layout: default
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
 
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About us<span class="caret"></span></a>
-                    </li>
+                    <li class="{% if page.category == 'about' %}active{% endif %}"><a href="{{ site.baseurl }}/about-us/overview/">About us</a></li>
 
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Brands<span class="caret"></span></a>
